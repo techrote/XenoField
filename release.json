@@ -1,0 +1,41 @@
+{
+  "release": "XENOFIELD V4.4b",
+  "packageVersion": "4.4.1-alpha.0",
+  "baseRelease": "XENOFIELD V4.4a",
+  "feature": "Dedicated procedural-cloud world volume with source-style controls and in-view transform tool",
+  "validation": {
+    "unitPassed": 317,
+    "staticPassed": 2503,
+    "uiPassed": 68,
+    "httpPassed": 11,
+    "dawnNullCasesPassed": 4,
+    "dawnValidationErrors": 0,
+    "proofBoundary": "Dawn null-backend command validation for V4.4b additions; no new rendered-pixel or hardware-performance claim."
+  },
+  "documents": {
+    "proceduralClouds": "docs/V4.4b-PROCEDURAL-CLOUDS.md",
+    "validation": "docs/V4.4b-VALIDATION.md",
+    "thirdParty": "THIRD_PARTY_NOTICES.md",
+    "baseArchitecture": "docs/V4.4a-ARCHITECTURE.md"
+  },
+  "runtimeSourceTree": {
+    "index.html": "a0c6e8823204bdbc97bbd10e4ba9bd42650128f1a518f104773a4e6a8ce8b1c6",
+    "styles.css": "834a5a21db65ee072111f8105112b75b2dbdabc6df1da1a513843941453ce95b",
+    "Xenofield-standalone.html": "d813e814b7c578ea3d9c2a8a65df48a3fb8b84d6434e6f2b594c9ae8aba42ff3",
+    "src/main.js": "82843646ca9322d2074245367acee89572b834bb0afd978b4ca411739d5e4a12",
+    "src/core/kinetic-parameters.js": "22247a8faafbfbf7bea4cd01b2ab6f5509007bc22e1b692e7783e6b9ca8c89c8",
+    "src/core/presets.js": "b54152699cc61d67adc8e819d49eab8624350714a3c2c014fd0de276b1d96ffd",
+    "src/core/store.js": "6086f5a3812aa8a0a7d644e2c7008e8451ed71b6b8131833508e45e8413881bc",
+    "src/render/renderer.js": "fad71cf25f38e7deee275149b0cbba4e80a8e963eb9943fa9d5729fe22b8f8c6",
+    "src/render/kinetic/common.js": "70463e278c504bb25b36b9b01144b9977c716c65af9fa6368d94c354bc9681f3",
+    "src/render/kinetic/compositor.js": "89ecb0d27b146623014efdfae194ec7af98aeecc23f0b8fe1d028ba588d5d5af",
+    "src/render/kinetic/procedural-cloud.js": "2069af5fef6a9e2032b00c84d5f4a3b1ef9c1f7f06af9e10c52aa4b3e9cbd3f6",
+    "src/render/kinetic/procedural-cloud-shaders.js": "28c62528692851c964af6ea89ced81d2b7a18a81cf13b0bfcfa8d9f28b76ed82",
+    "src/render/kinetic/quality.js": "95ccdde369b45b37be65a96c4b19bc245431b22dff09f21afe9e393ff4813764",
+    "src/ui/ui.js": "55e03adc1b830706f32d2d04103d434d8f40e5c3ca55c86b7bb55905008e1280",
+    "src/ui/procedural-cloud-ui.js": "cb777065689ae4c7911724b91f598cc6f14c3138cfa60f9606ae165252b9809d",
+    "docs/V4.4b-PROCEDURAL-CLOUDS.md": "ba959afcbfef1e00a52838723672a42b1efdab8a58fe9678e1799ac8c7ba2294",
+    "docs/V4.4b-VALIDATION.md": "34fb5a709603e1ebd0f487e9d43b0a7d056deea75f3888b752ba82a99f55d5c0",
+    "THIRD_PARTY_NOTICES.md": "f48293ac05d65c471ed98f197d94daa6131b96c693d33eb6ecaf5d0dc690f9e7"
+  }
+}

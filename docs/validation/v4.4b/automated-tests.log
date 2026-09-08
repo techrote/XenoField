@@ -1,0 +1,1917 @@
+
+> abyssal-xenofield@4.4.1-alpha.0 test
+> node --test tests/*.test.mjs && node tools/check.mjs
+
+TAP version 13
+# Subtest: parameter depthNear: defaults, hard bounds, finite-only
+ok 1 - parameter depthNear: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 3.157839
+  type: 'test'
+  ...
+# Subtest: parameter depthFar: defaults, hard bounds, finite-only
+ok 2 - parameter depthFar: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.357659
+  type: 'test'
+  ...
+# Subtest: parameter depthGamma: defaults, hard bounds, finite-only
+ok 3 - parameter depthGamma: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.12176
+  type: 'test'
+  ...
+# Subtest: parameter depthBands: defaults, hard bounds, finite-only
+ok 4 - parameter depthBands: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.11527
+  type: 'test'
+  ...
+# Subtest: parameter depthQuantize: defaults, hard bounds, finite-only
+ok 5 - parameter depthQuantize: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.931387
+  type: 'test'
+  ...
+# Subtest: parameter depthPhase: defaults, hard bounds, finite-only
+ok 6 - parameter depthPhase: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.202489
+  type: 'test'
+  ...
+# Subtest: parameter depthDrift: defaults, hard bounds, finite-only
+ok 7 - parameter depthDrift: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.099988
+  type: 'test'
+  ...
+# Subtest: parameter depthRadius: defaults, hard bounds, finite-only
+ok 8 - parameter depthRadius: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.119206
+  type: 'test'
+  ...
+# Subtest: parameter depthEdge: defaults, hard bounds, finite-only
+ok 9 - parameter depthEdge: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.288176
+  type: 'test'
+  ...
+# Subtest: parameter depthThreshold: defaults, hard bounds, finite-only
+ok 10 - parameter depthThreshold: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.60864
+  type: 'test'
+  ...
+# Subtest: parameter depthSoftness: defaults, hard bounds, finite-only
+ok 11 - parameter depthSoftness: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.179235
+  type: 'test'
+  ...
+# Subtest: parameter depthAmount: defaults, hard bounds, finite-only
+ok 12 - parameter depthAmount: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.097724
+  type: 'test'
+  ...
+# Subtest: parameter depthHue: defaults, hard bounds, finite-only
+ok 13 - parameter depthHue: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.082402
+  type: 'test'
+  ...
+# Subtest: parameter depthPyramidLevels: defaults, hard bounds, finite-only
+ok 14 - parameter depthPyramidLevels: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.077885
+  type: 'test'
+  ...
+# Subtest: parameter temporalWeight: defaults, hard bounds, finite-only
+ok 15 - parameter temporalWeight: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.077073
+  type: 'test'
+  ...
+# Subtest: parameter temporalDepthReject: defaults, hard bounds, finite-only
+ok 16 - parameter temporalDepthReject: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.080999
+  type: 'test'
+  ...
+# Subtest: parameter temporalLumaReject: defaults, hard bounds, finite-only
+ok 17 - parameter temporalLumaReject: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.076032
+  type: 'test'
+  ...
+# Subtest: parameter temporalClamp: defaults, hard bounds, finite-only
+ok 18 - parameter temporalClamp: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.071837
+  type: 'test'
+  ...
+# Subtest: parameter temporalResponse: defaults, hard bounds, finite-only
+ok 19 - parameter temporalResponse: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.102732
+  type: 'test'
+  ...
+# Subtest: parameter jitterScale: defaults, hard bounds, finite-only
+ok 20 - parameter jitterScale: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.077034
+  type: 'test'
+  ...
+# Subtest: parameter feedbackAmount: defaults, hard bounds, finite-only
+ok 21 - parameter feedbackAmount: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072828
+  type: 'test'
+  ...
+# Subtest: parameter feedbackPersistence: defaults, hard bounds, finite-only
+ok 22 - parameter feedbackPersistence: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.078606
+  type: 'test'
+  ...
+# Subtest: parameter feedbackDecay: defaults, hard bounds, finite-only
+ok 23 - parameter feedbackDecay: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.073158
+  type: 'test'
+  ...
+# Subtest: parameter feedbackGain: defaults, hard bounds, finite-only
+ok 24 - parameter feedbackGain: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.071976
+  type: 'test'
+  ...
+# Subtest: parameter feedbackHue: defaults, hard bounds, finite-only
+ok 25 - parameter feedbackHue: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072568
+  type: 'test'
+  ...
+# Subtest: parameter feedbackZoom: defaults, hard bounds, finite-only
+ok 26 - parameter feedbackZoom: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.07401
+  type: 'test'
+  ...
+# Subtest: parameter feedbackRotation: defaults, hard bounds, finite-only
+ok 27 - parameter feedbackRotation: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072247
+  type: 'test'
+  ...
+# Subtest: parameter feedbackX: defaults, hard bounds, finite-only
+ok 28 - parameter feedbackX: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.101019
+  type: 'test'
+  ...
+# Subtest: parameter feedbackY: defaults, hard bounds, finite-only
+ok 29 - parameter feedbackY: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.104074
+  type: 'test'
+  ...
+# Subtest: parameter feedbackWarp: defaults, hard bounds, finite-only
+ok 30 - parameter feedbackWarp: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.077325
+  type: 'test'
+  ...
+# Subtest: parameter feedbackThreshold: defaults, hard bounds, finite-only
+ok 31 - parameter feedbackThreshold: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.106007
+  type: 'test'
+  ...
+# Subtest: parameter volumeDensityFPS: defaults, hard bounds, finite-only
+ok 32 - parameter volumeDensityFPS: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.083664
+  type: 'test'
+  ...
+# Subtest: parameter volumeLightFPS: defaults, hard bounds, finite-only
+ok 33 - parameter volumeLightFPS: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.07384
+  type: 'test'
+  ...
+# Subtest: parameter volumeDensity: defaults, hard bounds, finite-only
+ok 34 - parameter volumeDensity: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.07428
+  type: 'test'
+  ...
+# Subtest: parameter volumeCoverage: defaults, hard bounds, finite-only
+ok 35 - parameter volumeCoverage: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.074059
+  type: 'test'
+  ...
+# Subtest: parameter volumeThreshold: defaults, hard bounds, finite-only
+ok 36 - parameter volumeThreshold: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.073048
+  type: 'test'
+  ...
+# Subtest: parameter volumeSoftness: defaults, hard bounds, finite-only
+ok 37 - parameter volumeSoftness: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072137
+  type: 'test'
+  ...
+# Subtest: parameter volumeScale: defaults, hard bounds, finite-only
+ok 38 - parameter volumeScale: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.163652
+  type: 'test'
+  ...
+# Subtest: parameter volumeDetail: defaults, hard bounds, finite-only
+ok 39 - parameter volumeDetail: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.089663
+  type: 'test'
+  ...
+# Subtest: parameter volumeWarp: defaults, hard bounds, finite-only
+ok 40 - parameter volumeWarp: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.07382
+  type: 'test'
+  ...
+# Subtest: parameter volumePower: defaults, hard bounds, finite-only
+ok 41 - parameter volumePower: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.07463
+  type: 'test'
+  ...
+# Subtest: parameter volumeQuantize: defaults, hard bounds, finite-only
+ok 42 - parameter volumeQuantize: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.069923
+  type: 'test'
+  ...
+# Subtest: parameter volumePosterize: defaults, hard bounds, finite-only
+ok 43 - parameter volumePosterize: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.075081
+  type: 'test'
+  ...
+# Subtest: parameter volumeDropout: defaults, hard bounds, finite-only
+ok 44 - parameter volumeDropout: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072667
+  type: 'test'
+  ...
+# Subtest: parameter volumeDither: defaults, hard bounds, finite-only
+ok 45 - parameter volumeDither: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.069372
+  type: 'test'
+  ...
+# Subtest: parameter volumePhaseSpeed: defaults, hard bounds, finite-only
+ok 46 - parameter volumePhaseSpeed: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.158865
+  type: 'test'
+  ...
+# Subtest: parameter volumeEmission: defaults, hard bounds, finite-only
+ok 47 - parameter volumeEmission: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.080349
+  type: 'test'
+  ...
+# Subtest: parameter volumeAbsorption: defaults, hard bounds, finite-only
+ok 48 - parameter volumeAbsorption: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.076303
+  type: 'test'
+  ...
+# Subtest: parameter volumeRim: defaults, hard bounds, finite-only
+ok 49 - parameter volumeRim: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.107829
+  type: 'test'
+  ...
+# Subtest: parameter volumeEnvironment: defaults, hard bounds, finite-only
+ok 50 - parameter volumeEnvironment: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.124814
+  type: 'test'
+  ...
+# Subtest: parameter volumeAmbient: defaults, hard bounds, finite-only
+ok 51 - parameter volumeAmbient: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.084015
+  type: 'test'
+  ...
+# Subtest: parameter volumeLightSteps: defaults, hard bounds, finite-only
+ok 52 - parameter volumeLightSteps: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.077404
+  type: 'test'
+  ...
+# Subtest: parameter volumeAttenuation: defaults, hard bounds, finite-only
+ok 53 - parameter volumeAttenuation: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.07465
+  type: 'test'
+  ...
+# Subtest: parameter volumePhase: defaults, hard bounds, finite-only
+ok 54 - parameter volumePhase: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.070894
+  type: 'test'
+  ...
+# Subtest: parameter volumeSpeed: defaults, hard bounds, finite-only
+ok 55 - parameter volumeSpeed: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072337
+  type: 'test'
+  ...
+# Subtest: parameter volumeSourceMix: defaults, hard bounds, finite-only
+ok 56 - parameter volumeSourceMix: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.071606
+  type: 'test'
+  ...
+# Subtest: parameter volumeMicrodetail: defaults, hard bounds, finite-only
+ok 57 - parameter volumeMicrodetail: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.071906
+  type: 'test'
+  ...
+# Subtest: parameter volumeMicroScale: defaults, hard bounds, finite-only
+ok 58 - parameter volumeMicroScale: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.071646
+  type: 'test'
+  ...
+# Subtest: parameter volumeCellEdges: defaults, hard bounds, finite-only
+ok 59 - parameter volumeCellEdges: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072317
+  type: 'test'
+  ...
+# Subtest: parameter volumeSlices: defaults, hard bounds, finite-only
+ok 60 - parameter volumeSlices: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.097474
+  type: 'test'
+  ...
+# Subtest: parameter volumeStepQuantize: defaults, hard bounds, finite-only
+ok 61 - parameter volumeStepQuantize: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 1.384947
+  type: 'test'
+  ...
+# Subtest: parameter volumeSize: defaults, hard bounds, finite-only
+ok 62 - parameter volumeSize: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.097544
+  type: 'test'
+  ...
+# Subtest: parameter volumeRange: defaults, hard bounds, finite-only
+ok 63 - parameter volumeRange: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.151815
+  type: 'test'
+  ...
+# Subtest: parameter volumeOffsetX: defaults, hard bounds, finite-only
+ok 64 - parameter volumeOffsetX: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.084846
+  type: 'test'
+  ...
+# Subtest: parameter volumeOffsetY: defaults, hard bounds, finite-only
+ok 65 - parameter volumeOffsetY: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072387
+  type: 'test'
+  ...
+# Subtest: parameter volumeOffsetZ: defaults, hard bounds, finite-only
+ok 66 - parameter volumeOffsetZ: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.105697
+  type: 'test'
+  ...
+# Subtest: parameter volumeShellOffset: defaults, hard bounds, finite-only
+ok 67 - parameter volumeShellOffset: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.076253
+  type: 'test'
+  ...
+# Subtest: parameter volumeShellThickness: defaults, hard bounds, finite-only
+ok 68 - parameter volumeShellThickness: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072226
+  type: 'test'
+  ...
+# Subtest: parameter volumeDepthSoftness: defaults, hard bounds, finite-only
+ok 69 - parameter volumeDepthSoftness: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.069753
+  type: 'test'
+  ...
+# Subtest: parameter volumeTemporalWeight: defaults, hard bounds, finite-only
+ok 70 - parameter volumeTemporalWeight: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.069633
+  type: 'test'
+  ...
+# Subtest: parameter volumeAmount: defaults, hard bounds, finite-only
+ok 71 - parameter volumeAmount: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.093529
+  type: 'test'
+  ...
+# Subtest: parameter procCloudDensity: defaults, hard bounds, finite-only
+ok 72 - parameter procCloudDensity: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.076764
+  type: 'test'
+  ...
+# Subtest: parameter procCloudCoverage: defaults, hard bounds, finite-only
+ok 73 - parameter procCloudCoverage: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.069332
+  type: 'test'
+  ...
+# Subtest: parameter procCloudScale: defaults, hard bounds, finite-only
+ok 74 - parameter procCloudScale: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.07426
+  type: 'test'
+  ...
+# Subtest: parameter procCloudAltitude: defaults, hard bounds, finite-only
+ok 75 - parameter procCloudAltitude: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.355376
+  type: 'test'
+  ...
+# Subtest: parameter procCloudDetail: defaults, hard bounds, finite-only
+ok 76 - parameter procCloudDetail: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.08132
+  type: 'test'
+  ...
+# Subtest: parameter procCloudWindSpeed: defaults, hard bounds, finite-only
+ok 77 - parameter procCloudWindSpeed: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.191203
+  type: 'test'
+  ...
+# Subtest: parameter procCloudRaySteps: defaults, hard bounds, finite-only
+ok 78 - parameter procCloudRaySteps: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.0881
+  type: 'test'
+  ...
+# Subtest: parameter procCloudLightSteps: defaults, hard bounds, finite-only
+ok 79 - parameter procCloudLightSteps: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.069182
+  type: 'test'
+  ...
+# Subtest: parameter procCloudShadowDark: defaults, hard bounds, finite-only
+ok 80 - parameter procCloudShadowDark: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.068962
+  type: 'test'
+  ...
+# Subtest: parameter procCloudSunIntensity: defaults, hard bounds, finite-only
+ok 81 - parameter procCloudSunIntensity: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.06742
+  type: 'test'
+  ...
+# Subtest: parameter procCloudHeight: defaults, hard bounds, finite-only
+ok 82 - parameter procCloudHeight: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.066999
+  type: 'test'
+  ...
+# Subtest: parameter procCloudCacheRes: defaults, hard bounds, finite-only
+ok 83 - parameter procCloudCacheRes: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.066598
+  type: 'test'
+  ...
+# Subtest: parameter procCloudCacheUpdate: defaults, hard bounds, finite-only
+ok 84 - parameter procCloudCacheUpdate: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.064866
+  type: 'test'
+  ...
+# Subtest: parameter procCloudCacheSmooth: defaults, hard bounds, finite-only
+ok 85 - parameter procCloudCacheSmooth: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.079798
+  type: 'test'
+  ...
+# Subtest: parameter procCloudCenterX: defaults, hard bounds, finite-only
+ok 86 - parameter procCloudCenterX: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072677
+  type: 'test'
+  ...
+# Subtest: parameter procCloudCenterY: defaults, hard bounds, finite-only
+ok 87 - parameter procCloudCenterY: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.068372
+  type: 'test'
+  ...
+# Subtest: parameter procCloudCenterZ: defaults, hard bounds, finite-only
+ok 88 - parameter procCloudCenterZ: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.065778
+  type: 'test'
+  ...
+# Subtest: parameter procCloudSizeX: defaults, hard bounds, finite-only
+ok 89 - parameter procCloudSizeX: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.070415
+  type: 'test'
+  ...
+# Subtest: parameter procCloudSizeY: defaults, hard bounds, finite-only
+ok 90 - parameter procCloudSizeY: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.070924
+  type: 'test'
+  ...
+# Subtest: parameter procCloudSizeZ: defaults, hard bounds, finite-only
+ok 91 - parameter procCloudSizeZ: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.108801
+  type: 'test'
+  ...
+# Subtest: parameter procCloudRenderScale: defaults, hard bounds, finite-only
+ok 92 - parameter procCloudRenderScale: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.073749
+  type: 'test'
+  ...
+# Subtest: parameter procCloudOpacity: defaults, hard bounds, finite-only
+ok 93 - parameter procCloudOpacity: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.100179
+  type: 'test'
+  ...
+# Subtest: parameter procCloudDepthSoftness: defaults, hard bounds, finite-only
+ok 94 - parameter procCloudDepthSoftness: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.068712
+  type: 'test'
+  ...
+# Subtest: parameter procCloudDragSensitivity: defaults, hard bounds, finite-only
+ok 95 - parameter procCloudDragSensitivity: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.065747
+  type: 'test'
+  ...
+# Subtest: parameter distortionStrength: defaults, hard bounds, finite-only
+ok 96 - parameter distortionStrength: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.089453
+  type: 'test'
+  ...
+# Subtest: parameter distortionScale: defaults, hard bounds, finite-only
+ok 97 - parameter distortionScale: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.066509
+  type: 'test'
+  ...
+# Subtest: parameter distortionDepth: defaults, hard bounds, finite-only
+ok 98 - parameter distortionDepth: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.064636
+  type: 'test'
+  ...
+# Subtest: parameter distortionThreshold: defaults, hard bounds, finite-only
+ok 99 - parameter distortionThreshold: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.063213
+  type: 'test'
+  ...
+# Subtest: parameter distortionChromatic: defaults, hard bounds, finite-only
+ok 100 - parameter distortionChromatic: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.091405
+  type: 'test'
+  ...
+# Subtest: parameter distortionR: defaults, hard bounds, finite-only
+ok 101 - parameter distortionR: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.068361
+  type: 'test'
+  ...
+# Subtest: parameter distortionG: defaults, hard bounds, finite-only
+ok 102 - parameter distortionG: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.063654
+  type: 'test'
+  ...
+# Subtest: parameter distortionB: defaults, hard bounds, finite-only
+ok 103 - parameter distortionB: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.158214
+  type: 'test'
+  ...
+# Subtest: parameter distortionPhase: defaults, hard bounds, finite-only
+ok 104 - parameter distortionPhase: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.086277
+  type: 'test'
+  ...
+# Subtest: parameter distortionDirection: defaults, hard bounds, finite-only
+ok 105 - parameter distortionDirection: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.070765
+  type: 'test'
+  ...
+# Subtest: parameter distortionDrift: defaults, hard bounds, finite-only
+ok 106 - parameter distortionDrift: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.065567
+  type: 'test'
+  ...
+# Subtest: parameter positiveAmount: defaults, hard bounds, finite-only
+ok 107 - parameter positiveAmount: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.145084
+  type: 'test'
+  ...
+# Subtest: parameter positiveThreshold: defaults, hard bounds, finite-only
+ok 108 - parameter positiveThreshold: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.068681
+  type: 'test'
+  ...
+# Subtest: parameter positiveRadius: defaults, hard bounds, finite-only
+ok 109 - parameter positiveRadius: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.065437
+  type: 'test'
+  ...
+# Subtest: parameter darkAmount: defaults, hard bounds, finite-only
+ok 110 - parameter darkAmount: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.066568
+  type: 'test'
+  ...
+# Subtest: parameter darkThreshold: defaults, hard bounds, finite-only
+ok 111 - parameter darkThreshold: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.203931
+  type: 'test'
+  ...
+# Subtest: parameter darkRadius: defaults, hard bounds, finite-only
+ok 112 - parameter darkRadius: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.078335
+  type: 'test'
+  ...
+# Subtest: parameter colourAmount: defaults, hard bounds, finite-only
+ok 113 - parameter colourAmount: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.068462
+  type: 'test'
+  ...
+# Subtest: parameter colourPhase: defaults, hard bounds, finite-only
+ok 114 - parameter colourPhase: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.11515
+  type: 'test'
+  ...
+# Subtest: parameter colourSpeed: defaults, hard bounds, finite-only
+ok 115 - parameter colourSpeed: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.071115
+  type: 'test'
+  ...
+# Subtest: parameter maxRenderMP: defaults, hard bounds, finite-only
+ok 116 - parameter maxRenderMP: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.101861
+  type: 'test'
+  ...
+# Subtest: parameter textureBudgetMB: defaults, hard bounds, finite-only
+ok 117 - parameter textureBudgetMB: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.069102
+  type: 'test'
+  ...
+# Subtest: parameter debugMip: defaults, hard bounds, finite-only
+ok 118 - parameter debugMip: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.064215
+  type: 'test'
+  ...
+# Subtest: parameter freqY: defaults, hard bounds, finite-only
+ok 119 - parameter freqY: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.065797
+  type: 'test'
+  ...
+# Subtest: parameter freqX: defaults, hard bounds, finite-only
+ok 120 - parameter freqX: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.065587
+  type: 'test'
+  ...
+# Subtest: parameter speed: defaults, hard bounds, finite-only
+ok 121 - parameter speed: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.066147
+  type: 'test'
+  ...
+# Subtest: parameter hueShift: defaults, hard bounds, finite-only
+ok 122 - parameter hueShift: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.066819
+  type: 'test'
+  ...
+# Subtest: parameter radius: defaults, hard bounds, finite-only
+ok 123 - parameter radius: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.065026
+  type: 'test'
+  ...
+# Subtest: parameter diagonal: defaults, hard bounds, finite-only
+ok 124 - parameter diagonal: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.064435
+  type: 'test'
+  ...
+# Subtest: parameter warp: defaults, hard bounds, finite-only
+ok 125 - parameter warp: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.069503
+  type: 'test'
+  ...
+# Subtest: parameter fieldContrast: defaults, hard bounds, finite-only
+ok 126 - parameter fieldContrast: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.06712
+  type: 'test'
+  ...
+# Subtest: parameter radiance: defaults, hard bounds, finite-only
+ok 127 - parameter radiance: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.06789
+  type: 'test'
+  ...
+# Subtest: parameter sourceWidth: defaults, hard bounds, finite-only
+ok 128 - parameter sourceWidth: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.066558
+  type: 'test'
+  ...
+# Subtest: parameter envMapWidth: defaults, hard bounds, finite-only
+ok 129 - parameter envMapWidth: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.077284
+  type: 'test'
+  ...
+# Subtest: parameter generatorFPS: defaults, hard bounds, finite-only
+ok 130 - parameter generatorFPS: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.073839
+  type: 'test'
+  ...
+# Subtest: parameter spatialSmooth: defaults, hard bounds, finite-only
+ok 131 - parameter spatialSmooth: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072167
+  type: 'test'
+  ...
+# Subtest: parameter temporalSmooth: defaults, hard bounds, finite-only
+ok 132 - parameter temporalSmooth: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.07452
+  type: 'test'
+  ...
+# Subtest: parameter nlFilterStrength: defaults, hard bounds, finite-only
+ok 133 - parameter nlFilterStrength: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072447
+  type: 'test'
+  ...
+# Subtest: parameter nlFilterRadius: defaults, hard bounds, finite-only
+ok 134 - parameter nlFilterRadius: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072407
+  type: 'test'
+  ...
+# Subtest: parameter envRotation: defaults, hard bounds, finite-only
+ok 135 - parameter envRotation: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072036
+  type: 'test'
+  ...
+# Subtest: parameter envGain: defaults, hard bounds, finite-only
+ok 136 - parameter envGain: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.10116
+  type: 'test'
+  ...
+# Subtest: parameter envBlur: defaults, hard bounds, finite-only
+ok 137 - parameter envBlur: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.106718
+  type: 'test'
+  ...
+# Subtest: parameter waves: defaults, hard bounds, finite-only
+ok 138 - parameter waves: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.076453
+  type: 'test'
+  ...
+# Subtest: parameter choppiness: defaults, hard bounds, finite-only
+ok 139 - parameter choppiness: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.102151
+  type: 'test'
+  ...
+# Subtest: parameter swell: defaults, hard bounds, finite-only
+ok 140 - parameter swell: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.077654
+  type: 'test'
+  ...
+# Subtest: parameter windSea: defaults, hard bounds, finite-only
+ok 141 - parameter windSea: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.073909
+  type: 'test'
+  ...
+# Subtest: parameter capillary: defaults, hard bounds, finite-only
+ok 142 - parameter capillary: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072056
+  type: 'test'
+  ...
+# Subtest: parameter current: defaults, hard bounds, finite-only
+ok 143 - parameter current: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.070894
+  type: 'test'
+  ...
+# Subtest: parameter patternScale: defaults, hard bounds, finite-only
+ok 144 - parameter patternScale: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.074941
+  type: 'test'
+  ...
+# Subtest: parameter perlinGain: defaults, hard bounds, finite-only
+ok 145 - parameter perlinGain: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.071285
+  type: 'test'
+  ...
+# Subtest: parameter billowGain: defaults, hard bounds, finite-only
+ok 146 - parameter billowGain: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.080669
+  type: 'test'
+  ...
+# Subtest: parameter ridgeGain: defaults, hard bounds, finite-only
+ok 147 - parameter ridgeGain: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.073569
+  type: 'test'
+  ...
+# Subtest: parameter normalStrength: defaults, hard bounds, finite-only
+ok 148 - parameter normalStrength: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072417
+  type: 'test'
+  ...
+# Subtest: parameter energyEmission: defaults, hard bounds, finite-only
+ok 149 - parameter energyEmission: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.246535
+  type: 'test'
+  ...
+# Subtest: parameter foamAmount: defaults, hard bounds, finite-only
+ok 150 - parameter foamAmount: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.084245
+  type: 'test'
+  ...
+# Subtest: parameter foamLight: defaults, hard bounds, finite-only
+ok 151 - parameter foamLight: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.076593
+  type: 'test'
+  ...
+# Subtest: parameter foamBreakup: defaults, hard bounds, finite-only
+ok 152 - parameter foamBreakup: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.098205
+  type: 'test'
+  ...
+# Subtest: parameter foamStreaks: defaults, hard bounds, finite-only
+ok 153 - parameter foamStreaks: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.074961
+  type: 'test'
+  ...
+# Subtest: parameter foamPersistence: defaults, hard bounds, finite-only
+ok 154 - parameter foamPersistence: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.075662
+  type: 'test'
+  ...
+# Subtest: parameter bodyGain: defaults, hard bounds, finite-only
+ok 155 - parameter bodyGain: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072487
+  type: 'test'
+  ...
+# Subtest: parameter reflectionGain: defaults, hard bounds, finite-only
+ok 156 - parameter reflectionGain: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072537
+  type: 'test'
+  ...
+# Subtest: parameter fresnelBias: defaults, hard bounds, finite-only
+ok 157 - parameter fresnelBias: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072597
+  type: 'test'
+  ...
+# Subtest: parameter fresnelEdge: defaults, hard bounds, finite-only
+ok 158 - parameter fresnelEdge: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072617
+  type: 'test'
+  ...
+# Subtest: parameter fresnelShape: defaults, hard bounds, finite-only
+ok 159 - parameter fresnelShape: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.071675
+  type: 'test'
+  ...
+# Subtest: parameter roughness: defaults, hard bounds, finite-only
+ok 160 - parameter roughness: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.098927
+  type: 'test'
+  ...
+# Subtest: parameter drawDistance: defaults, hard bounds, finite-only
+ok 161 - parameter drawDistance: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.154228
+  type: 'test'
+  ...
+# Subtest: parameter fogBand: defaults, hard bounds, finite-only
+ok 162 - parameter fogBand: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.126227
+  type: 'test'
+  ...
+# Subtest: parameter fogStrength: defaults, hard bounds, finite-only
+ok 163 - parameter fogStrength: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.076664
+  type: 'test'
+  ...
+# Subtest: parameter cloudCoverage: defaults, hard bounds, finite-only
+ok 164 - parameter cloudCoverage: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.073369
+  type: 'test'
+  ...
+# Subtest: parameter cloudOpacity: defaults, hard bounds, finite-only
+ok 165 - parameter cloudOpacity: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.07445
+  type: 'test'
+  ...
+# Subtest: parameter cloudScale: defaults, hard bounds, finite-only
+ok 166 - parameter cloudScale: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.071185
+  type: 'test'
+  ...
+# Subtest: parameter cloudDrift: defaults, hard bounds, finite-only
+ok 167 - parameter cloudDrift: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.08102
+  type: 'test'
+  ...
+# Subtest: parameter meshResolution: defaults, hard bounds, finite-only
+ok 168 - parameter meshResolution: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.075442
+  type: 'test'
+  ...
+# Subtest: parameter renderScale: defaults, hard bounds, finite-only
+ok 169 - parameter renderScale: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.105306
+  type: 'test'
+  ...
+# Subtest: parameter displayFPS: defaults, hard bounds, finite-only
+ok 170 - parameter displayFPS: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.082843
+  type: 'test'
+  ...
+# Subtest: parameter exposure: defaults, hard bounds, finite-only
+ok 171 - parameter exposure: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.07385
+  type: 'test'
+  ...
+# Subtest: parameter contrast: defaults, hard bounds, finite-only
+ok 172 - parameter contrast: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.084895
+  type: 'test'
+  ...
+# Subtest: parameter bloom: defaults, hard bounds, finite-only
+ok 173 - parameter bloom: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.073428
+  type: 'test'
+  ...
+# Subtest: parameter bloomThreshold: defaults, hard bounds, finite-only
+ok 174 - parameter bloomThreshold: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.075131
+  type: 'test'
+  ...
+# Subtest: parameter bloomRadius: defaults, hard bounds, finite-only
+ok 175 - parameter bloomRadius: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.073348
+  type: 'test'
+  ...
+# Subtest: parameter sharpen: defaults, hard bounds, finite-only
+ok 176 - parameter sharpen: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.076964
+  type: 'test'
+  ...
+# Subtest: parameter ambientIntensity: defaults, hard bounds, finite-only
+ok 177 - parameter ambientIntensity: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.208449
+  type: 'test'
+  ...
+# Subtest: parameter emissiveIntensity: defaults, hard bounds, finite-only
+ok 178 - parameter emissiveIntensity: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.085736
+  type: 'test'
+  ...
+# Subtest: parameter spotIntensity: defaults, hard bounds, finite-only
+ok 179 - parameter spotIntensity: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.081701
+  type: 'test'
+  ...
+# Subtest: parameter spotAzimuth: defaults, hard bounds, finite-only
+ok 180 - parameter spotAzimuth: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.073128
+  type: 'test'
+  ...
+# Subtest: parameter spotElevation: defaults, hard bounds, finite-only
+ok 181 - parameter spotElevation: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.07471
+  type: 'test'
+  ...
+# Subtest: parameter spotFocus: defaults, hard bounds, finite-only
+ok 182 - parameter spotFocus: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.071306
+  type: 'test'
+  ...
+# Subtest: parameter projectionMix: defaults, hard bounds, finite-only
+ok 183 - parameter projectionMix: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.071285
+  type: 'test'
+  ...
+# Subtest: parameter projectionScaleX: defaults, hard bounds, finite-only
+ok 184 - parameter projectionScaleX: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.073859
+  type: 'test'
+  ...
+# Subtest: parameter projectionScaleY: defaults, hard bounds, finite-only
+ok 185 - parameter projectionScaleY: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.069472
+  type: 'test'
+  ...
+# Subtest: parameter projectionScaleZ: defaults, hard bounds, finite-only
+ok 186 - parameter projectionScaleZ: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.06728
+  type: 'test'
+  ...
+# Subtest: parameter projectionRotationX: defaults, hard bounds, finite-only
+ok 187 - parameter projectionRotationX: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.071166
+  type: 'test'
+  ...
+# Subtest: parameter projectionRotationY: defaults, hard bounds, finite-only
+ok 188 - parameter projectionRotationY: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.070244
+  type: 'test'
+  ...
+# Subtest: parameter projectionRotationZ: defaults, hard bounds, finite-only
+ok 189 - parameter projectionRotationZ: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.06795
+  type: 'test'
+  ...
+# Subtest: parameter projectionOffsetX: defaults, hard bounds, finite-only
+ok 190 - parameter projectionOffsetX: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.089011
+  type: 'test'
+  ...
+# Subtest: parameter projectionOffsetY: defaults, hard bounds, finite-only
+ok 191 - parameter projectionOffsetY: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.075662
+  type: 'test'
+  ...
+# Subtest: parameter projectionOffsetZ: defaults, hard bounds, finite-only
+ok 192 - parameter projectionOffsetZ: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.069533
+  type: 'test'
+  ...
+# Subtest: parameter projectionOriginX: defaults, hard bounds, finite-only
+ok 193 - parameter projectionOriginX: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.068742
+  type: 'test'
+  ...
+# Subtest: parameter projectionOriginY: defaults, hard bounds, finite-only
+ok 194 - parameter projectionOriginY: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.071065
+  type: 'test'
+  ...
+# Subtest: parameter projectionOriginZ: defaults, hard bounds, finite-only
+ok 195 - parameter projectionOriginZ: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.07476
+  type: 'test'
+  ...
+# Subtest: parameter projectionSharpness: defaults, hard bounds, finite-only
+ok 196 - parameter projectionSharpness: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.070564
+  type: 'test'
+  ...
+# Subtest: parameter projectionWarp: defaults, hard bounds, finite-only
+ok 197 - parameter projectionWarp: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.069543
+  type: 'test'
+  ...
+# Subtest: parameter projectionDriftX: defaults, hard bounds, finite-only
+ok 198 - parameter projectionDriftX: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072587
+  type: 'test'
+  ...
+# Subtest: parameter projectionDriftY: defaults, hard bounds, finite-only
+ok 199 - parameter projectionDriftY: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.072747
+  type: 'test'
+  ...
+# Subtest: parameter projectionQuantize: defaults, hard bounds, finite-only
+ok 200 - parameter projectionQuantize: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.070505
+  type: 'test'
+  ...
+# Subtest: parameter projectionDisplacement: defaults, hard bounds, finite-only
+ok 201 - parameter projectionDisplacement: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.070695
+  type: 'test'
+  ...
+# Subtest: parameter projectionDisplacementSafety: defaults, hard bounds, finite-only
+ok 202 - parameter projectionDisplacementSafety: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.096323
+  type: 'test'
+  ...
+# Subtest: parameter projectorFov: defaults, hard bounds, finite-only
+ok 203 - parameter projectorFov: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.078015
+  type: 'test'
+  ...
+# Subtest: parameter meshScale: defaults, hard bounds, finite-only
+ok 204 - parameter meshScale: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.071335
+  type: 'test'
+  ...
+# Subtest: parameter meshWeldEpsilon: defaults, hard bounds, finite-only
+ok 205 - parameter meshWeldEpsilon: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.070675
+  type: 'test'
+  ...
+# Subtest: parameter meshTargetEdge: defaults, hard bounds, finite-only
+ok 206 - parameter meshTargetEdge: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.070154
+  type: 'test'
+  ...
+# Subtest: parameter meshCurvatureAngle: defaults, hard bounds, finite-only
+ok 207 - parameter meshCurvatureAngle: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 1.349876
+  type: 'test'
+  ...
+# Subtest: parameter meshSubdivideLevels: defaults, hard bounds, finite-only
+ok 208 - parameter meshSubdivideLevels: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.097364
+  type: 'test'
+  ...
+# Subtest: parameter meshSmoothIterations: defaults, hard bounds, finite-only
+ok 209 - parameter meshSmoothIterations: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.071796
+  type: 'test'
+  ...
+# Subtest: parameter meshSmoothStrength: defaults, hard bounds, finite-only
+ok 210 - parameter meshSmoothStrength: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.24998
+  type: 'test'
+  ...
+# Subtest: parameter meshSpikeThreshold: defaults, hard bounds, finite-only
+ok 211 - parameter meshSpikeThreshold: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.081941
+  type: 'test'
+  ...
+# Subtest: parameter meshHardEdgeAngle: defaults, hard bounds, finite-only
+ok 212 - parameter meshHardEdgeAngle: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.06813
+  type: 'test'
+  ...
+# Subtest: parameter meshTriangleCap: defaults, hard bounds, finite-only
+ok 213 - parameter meshTriangleCap: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.066098
+  type: 'test'
+  ...
+# Subtest: parameter mixerMix: defaults, hard bounds, finite-only
+ok 214 - parameter mixerMix: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.065927
+  type: 'test'
+  ...
+# Subtest: parameter noixtureAmount: defaults, hard bounds, finite-only
+ok 215 - parameter noixtureAmount: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.064085
+  type: 'test'
+  ...
+# Subtest: parameter noixtureScale: defaults, hard bounds, finite-only
+ok 216 - parameter noixtureScale: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.063473
+  type: 'test'
+  ...
+# Subtest: parameter noixtureContrast: defaults, hard bounds, finite-only
+ok 217 - parameter noixtureContrast: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.065176
+  type: 'test'
+  ...
+# Subtest: parameter noixtureDrift: defaults, hard bounds, finite-only
+ok 218 - parameter noixtureDrift: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.063925
+  type: 'test'
+  ...
+# Subtest: parameter maskSourceMix: defaults, hard bounds, finite-only
+ok 219 - parameter maskSourceMix: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.064155
+  type: 'test'
+  ...
+# Subtest: parameter maskBrightness: defaults, hard bounds, finite-only
+ok 220 - parameter maskBrightness: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.065778
+  type: 'test'
+  ...
+# Subtest: parameter maskContrast: defaults, hard bounds, finite-only
+ok 221 - parameter maskContrast: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.079647
+  type: 'test'
+  ...
+# Subtest: parameter maskGamma: defaults, hard bounds, finite-only
+ok 222 - parameter maskGamma: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.066908
+  type: 'test'
+  ...
+# Subtest: parameter maskThreshold: defaults, hard bounds, finite-only
+ok 223 - parameter maskThreshold: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.063283
+  type: 'test'
+  ...
+# Subtest: parameter maskSoftness: defaults, hard bounds, finite-only
+ok 224 - parameter maskSoftness: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.063975
+  type: 'test'
+  ...
+# Subtest: parameter maskScale: defaults, hard bounds, finite-only
+ok 225 - parameter maskScale: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.065166
+  type: 'test'
+  ...
+# Subtest: parameter maskDrift: defaults, hard bounds, finite-only
+ok 226 - parameter maskDrift: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.064725
+  type: 'test'
+  ...
+# Subtest: parameter modAmplitude: defaults, hard bounds, finite-only
+ok 227 - parameter modAmplitude: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.067479
+  type: 'test'
+  ...
+# Subtest: parameter modHz: defaults, hard bounds, finite-only
+ok 228 - parameter modHz: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.068952
+  type: 'test'
+  ...
+# Subtest: parameter modWidthMin: defaults, hard bounds, finite-only
+ok 229 - parameter modWidthMin: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.085527
+  type: 'test'
+  ...
+# Subtest: parameter modWidthMax: defaults, hard bounds, finite-only
+ok 230 - parameter modWidthMax: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.066919
+  type: 'test'
+  ...
+# Subtest: parameter modOffset: defaults, hard bounds, finite-only
+ok 231 - parameter modOffset: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.063674
+  type: 'test'
+  ...
+# Subtest: parameter lutRandomScale: defaults, hard bounds, finite-only
+ok 232 - parameter lutRandomScale: defaults, hard bounds, finite-only
+  ---
+  duration_ms: 0.090343
+  type: 'test'
+  ...
+# Subtest: range validation rejects reversed/equal/unsafe windows
+ok 233 - range validation rejects reversed/equal/unsafe windows
+  ---
+  duration_ms: 0.117343
+  type: 'test'
+  ...
+# Subtest: source dimensions are even integers and geometry does not inherit FFT restrictions
+ok 234 - source dimensions are even integers and geometry does not inherit FFT restrictions
+  ---
+  duration_ms: 0.100218
+  type: 'test'
+  ...
+# Subtest: state numeric edits expand the window without changing hard safety caps
+ok 235 - state numeric edits expand the window without changing hard safety caps
+  ---
+  duration_ms: 7.411088
+  type: 'test'
+  ...
+# Subtest: range edits do not change the actual parameter
+ok 236 - range edits do not change the actual parameter
+  ---
+  duration_ms: 3.113093
+  type: 'test'
+  ...
+# Subtest: malformed project import is atomic
+ok 237 - malformed project import is atomic
+  ---
+  duration_ms: 6.68865
+  type: 'test'
+  ...
+# Subtest: valid project roundtrip retains numbers, ranges and ten LUTs
+ok 238 - valid project roundtrip retains numbers, ranges and ten LUTs
+  ---
+  duration_ms: 20.095797
+  type: 'test'
+  ...
+# Subtest: twenty-two global stacks are complete lists of valid panel preset names
+ok 239 - twenty-two global stacks are complete lists of valid panel preset names
+  ---
+  duration_ms: 0.651083
+  type: 'test'
+  ...
+# Subtest: built-in panel presets stay inside their panel ownership boundaries
+ok 240 - built-in panel presets stay inside their panel ownership boundaries
+  ---
+  duration_ms: 36.772819
+  type: 'test'
+  ...
+# Subtest: panel presets and global stacks save/load modular state including LUT snapshots
+ok 241 - panel presets and global stacks save/load modular state including LUT snapshots
+  ---
+  duration_ms: 16.709355
+  type: 'test'
+  ...
+# Subtest: palette import/export roundtrip and exact count enforcement
+ok 242 - palette import/export roundtrip and exact count enforcement
+  ---
+  duration_ms: 2.119444
+  type: 'test'
+  ...
+# Subtest: palette randomisation is deterministic, bounded and zero-scale identity
+ok 243 - palette randomisation is deterministic, bounded and zero-scale identity
+  ---
+  duration_ms: 4.334959
+  type: 'test'
+  ...
+# Subtest: invalid palette replacement cannot mutate a live bank
+ok 244 - invalid palette replacement cannot mutate a live bank
+  ---
+  duration_ms: 3.362361
+  type: 'test'
+  ...
+# Subtest: storage failure is survivable
+ok 245 - storage failure is survivable
+  ---
+  duration_ms: 7.549512
+  type: 'test'
+  ...
+# Subtest: legacy savePreset/loadPreset aliases delegate to modular global stacks
+ok 246 - legacy savePreset/loadPreset aliases delegate to modular global stacks
+  ---
+  duration_ms: 10.936901
+  type: 'test'
+  ...
+# Subtest: editable hard safety caps remain inside immutable engineering bounds
+ok 247 - editable hard safety caps remain inside immutable engineering bounds
+  ---
+  duration_ms: 2.79349
+  type: 'test'
+  ...
+# Subtest: functional extremums are persisted reference metadata and never clamp values
+ok 248 - functional extremums are persisted reference metadata and never clamp values
+  ---
+  duration_ms: 9.627624
+  type: 'test'
+  ...
+# Subtest: UI tooltip preference persists in project state
+ok 249 - UI tooltip preference persists in project state
+  ---
+  duration_ms: 7.72372
+  type: 'test'
+  ...
+# Subtest: modulation width order is validated at the common setting boundary
+ok 250 - modulation width order is validated at the common setting boundary
+  ---
+  duration_ms: 0.348706
+  type: 'test'
+  ...
+# Subtest: blend-mode bank exposes the practical GIMP-style RGB modes and legacy aliases
+ok 251 - blend-mode bank exposes the practical GIMP-style RGB modes and legacy aliases
+  ---
+  duration_ms: 20.455203
+  type: 'test'
+  ...
+# Subtest: live mask schema supports mixed sources, image manipulation and multi-target routing
+ok 252 - live mask schema supports mixed sources, image manipulation and multi-target routing
+  ---
+  duration_ms: 0.427102
+  type: 'test'
+  ...
+# Subtest: submenu locks protect only their keys during global loads
+ok 253 - submenu locks protect only their keys during global loads
+  ---
+  duration_ms: 13.480992
+  type: 'test'
+  ...
+# Subtest: panel-global LOCK and UNLOCK override submenu locks without changing them
+ok 254 - panel-global LOCK and UNLOCK override submenu locks without changing them
+  ---
+  duration_ms: 24.569436
+  type: 'test'
+  ...
+# Subtest: lock topology covers requested physical submenus and persists in project state
+ok 255 - lock topology covers requested physical submenus and persists in project state
+  ---
+  duration_ms: 6.847695
+  type: 'test'
+  ...
+# Subtest: Ion Orchard and Field Scan retain their legacy visual stacks while Phase Difference is tuned
+ok 256 - Ion Orchard and Field Scan retain their legacy visual stacks while Phase Difference is tuned
+  ---
+  duration_ms: 0.154769
+  type: 'test'
+  ...
+# Subtest: four-wave reference vector at zero frequencies
+ok 257 - four-wave reference vector at zero frequencies
+  ---
+  duration_ms: 1.551083
+  type: 'test'
+  ...
+# Subtest: spherical longitude wraps and poles have no longitudinal seam
+ok 258 - spherical longitude wraps and poles have no longitudinal seam
+  ---
+  duration_ms: 0.357709
+  type: 'test'
+  ...
+# Subtest: generated maps carry nontrivial pattern variance and linear HDR above one
+ok 259 - generated maps carry nontrivial pattern variance and linear HDR above one
+  ---
+  duration_ms: 8.138403
+  type: 'test'
+  ...
+# Subtest: smoothing preserves constant radiance, including seams and odd mip dimensions
+ok 260 - smoothing preserves constant radiance, including seams and odd mip dimensions
+  ---
+  duration_ms: 0.936144
+  type: 'test'
+  ...
+# Subtest: temporal smoothing is bounded and bypasses stale dimensions
+ok 261 - temporal smoothing is bounded and bypasses stale dimensions
+  ---
+  duration_ms: 0.714516
+  type: 'test'
+  ...
+# Subtest: modulation is transient, signed and never mutates the base
+ok 262 - modulation is transient, signed and never mutates the base
+  ---
+  duration_ms: 1.063813
+  type: 'test'
+  ...
+# Subtest: waveforms are finite; periodic waves join exactly
+ok 263 - waveforms are finite; periodic waves join exactly
+  ---
+  duration_ms: 0.730901
+  type: 'test'
+  ...
+# Subtest: half-float packer reference values and bounded exceptional inputs
+ok 264 - half-float packer reference values and bounded exceptional inputs
+  ---
+  duration_ms: 0.200246
+  type: 'test'
+  ...
+# Subtest: complete mip chain reaches 1x1 without allocating an upsampled source
+ok 265 - complete mip chain reaches 1x1 without allocating an upsampled source
+  ---
+  duration_ms: 8.828503
+  type: 'test'
+  ...
+# Subtest: HDR reader decodes modern RLE into unclipped linear radiance
+ok 266 - HDR reader decodes modern RLE into unclipped linear radiance
+  ---
+  duration_ms: 1.013508
+  type: 'test'
+  ...
+# Subtest: HDR reader supports flat legacy RGBE
+ok 267 - HDR reader supports flat legacy RGBE
+  ---
+  duration_ms: 0.266114
+  type: 'test'
+  ...
+# Subtest: HDR truncation and corrupt runs reject rather than publish
+ok 268 - HDR truncation and corrupt runs reject rather than publish
+  ---
+  duration_ms: 0.620257
+  type: 'test'
+  ...
+# Subtest: HDR dimensions are rejected before pixel allocation
+ok 269 - HDR dimensions are rejected before pixel allocation
+  ---
+  duration_ms: 0.139526
+  type: 'test'
+  ...
+# Subtest: local EXR decoder handles uncompressed float RGB scanlines without a network dependency
+ok 270 - local EXR decoder handles uncompressed float RGB scanlines without a network dependency
+  ---
+  duration_ms: 1.202007
+  type: 'test'
+  ...
+# Subtest: EXR decoder can downsample during decode while retaining original dimensions
+ok 271 - EXR decoder can downsample during decode while retaining original dimensions
+  ---
+  duration_ms: 0.465599
+  type: 'test'
+  ...
+# Subtest: grid has valid indices, dense near-field sampling and bounded allocations
+ok 272 - grid has valid indices, dense near-field sampling and bounded allocations
+  ---
+  duration_ms: 15.298449
+  type: 'test'
+  ...
+# Subtest: sphere geometry contains finite unit vectors and valid indices
+ok 273 - sphere geometry contains finite unit vectors and valid indices
+  ---
+  duration_ms: 1.04817
+  type: 'test'
+  ...
+# Subtest: view/projection matrix is finite at default poses
+ok 274 - view/projection matrix is finite at default poses
+  ---
+  duration_ms: 0.298571
+  type: 'test'
+  ...
+# Subtest: detail texture is precomputed once and mipmapped
+ok 275 - detail texture is precomputed once and mipmapped
+  ---
+  duration_ms: 5.194936
+  type: 'test'
+  ...
+# Subtest: all registered new choices roundtrip without legacy blend alias corruption
+ok 276 - all registered new choices roundtrip without legacy blend alias corruption
+  ---
+  duration_ms: 34.018638
+  type: 'test'
+  ...
+# Subtest: kinetic module keys have exactly one ownership boundary
+ok 277 - kinetic module keys have exactly one ownership boundary
+  ---
+  duration_ms: 0.503455
+  type: 'test'
+  ...
+# Subtest: all new mask sources work in the existing router and every compositor consumer
+ok 278 - all new mask sources work in the existing router and every compositor consumer
+  ---
+  duration_ms: 25.49881
+  type: 'test'
+  ...
+# Subtest: new numeric settings expand ranges and survive complete project serialization
+ok 279 - new numeric settings expand ranges and survive complete project serialization
+  ---
+  duration_ms: 36.601697
+  type: 'test'
+  ...
+# Subtest: new discrete sample controls cannot request native MSAA16 or native AF32
+ok 280 - new discrete sample controls cannot request native MSAA16 or native AF32
+  ---
+  duration_ms: 1.807001
+  type: 'test'
+  ...
+# Subtest: legacy V4.3b state loads with neutral optional graph and preserves user data
+ok 281 - legacy V4.3b state loads with neutral optional graph and preserves user data
+  ---
+  duration_ms: 9.267922
+  type: 'test'
+  ...
+# Subtest: all ten new stacks reset every new module rather than leaking previous effects
+ok 282 - all ten new stacks reset every new module rather than leaking previous effects
+  ---
+  duration_ms: 110.9823
+  type: 'test'
+  ...
+# Subtest: module locks protect AA independently from new visual stacks
+ok 283 - module locks protect AA independently from new visual stacks
+  ---
+  duration_ms: 10.075376
+  type: 'test'
+  ...
+# Subtest: SSAA 1 is pixel area, not per-axis multiplier
+ok 284 - SSAA 1 is pixel area, not per-axis multiplier
+  ---
+  duration_ms: 0.918608
+  type: 'test'
+  ...
+# Subtest: SSAA 2 is pixel area, not per-axis multiplier
+ok 285 - SSAA 2 is pixel area, not per-axis multiplier
+  ---
+  duration_ms: 0.620778
+  type: 'test'
+  ...
+# Subtest: SSAA 4 is pixel area, not per-axis multiplier
+ok 286 - SSAA 4 is pixel area, not per-axis multiplier
+  ---
+  duration_ms: 0.389666
+  type: 'test'
+  ...
+# Subtest: SSAA 8 is pixel area, not per-axis multiplier
+ok 287 - SSAA 8 is pixel area, not per-axis multiplier
+  ---
+  duration_ms: 0.291972
+  type: 'test'
+  ...
+# Subtest: output dimensions and internal dimensions independently obey device limits
+ok 288 - output dimensions and internal dimensions independently obey device limits
+  ---
+  duration_ms: 0.355806
+  type: 'test'
+  ...
+# Subtest: memory guard also scales an enormous presentation target
+ok 289 - memory guard also scales an enormous presentation target
+  ---
+  duration_ms: 0.291061
+  type: 'test'
+  ...
+# Subtest: bounded allocation sweep remains finite and below configured texture budgets
+ok 290 - bounded allocation sweep remains finite and below configured texture budgets
+  ---
+  duration_ms: 8.782415
+  type: 'test'
+  ...
+# Subtest: resolution signatures change only for actual allocation changes
+ok 291 - resolution signatures change only for actual allocation changes
+  ---
+  duration_ms: 0.483274
+  type: 'test'
+  ...
+# Subtest: disabled optional effects do not require the kinetic graph
+ok 292 - disabled optional effects do not require the kinetic graph
+  ---
+  duration_ms: 1.685723
+  type: 'test'
+  ...
+# Subtest: quality accounting includes independent MSAA, depth and history ownership
+ok 293 - quality accounting includes independent MSAA, depth and history ownership
+  ---
+  duration_ms: 0.385129
+  type: 'test'
+  ...
+# Subtest: native anisotropic presets satisfy all three required linear filters
+ok 294 - native anisotropic presets satisfy all three required linear filters
+  ---
+  duration_ms: 0.154048
+  type: 'test'
+  ...
+# Subtest: jitter sequences are deterministic, bounded, and repeat at their sample target
+ok 295 - jitter sequences are deterministic, bounded, and repeat at their sample target
+  ---
+  duration_ms: 14.201397
+  type: 'test'
+  ...
+# Subtest: camera jitter and inverse ray reconstruction agree in screen space
+ok 296 - camera jitter and inverse ray reconstruction agree in screen space
+  ---
+  duration_ms: 0.580899
+  type: 'test'
+  ...
+# Subtest: camera cuts are separated from small navigation changes
+ok 297 - camera cuts are separated from small navigation changes
+  ---
+  duration_ms: 0.156691
+  type: 'test'
+  ...
+# Subtest: shared uniform block stays finite and packs independent feedback opacity/persistence
+ok 298 - shared uniform block stays finite and packs independent feedback opacity/persistence
+  ---
+  duration_ms: 0.68987
+  type: 'test'
+  ...
+# Subtest: density and cached light have independent clocks and immediate budget edits
+ok 299 - density and cached light have independent clocks and immediate budget edits
+  ---
+  duration_ms: 3.447597
+  type: 'test'
+  ...
+# Subtest: volume blend interpolation progresses between generations without reallocating
+ok 300 - volume blend interpolation progresses between generations without reallocating
+  ---
+  duration_ms: 0.412469
+  type: 'test'
+  ...
+# Subtest: temporal reset invalidates only requested history without conflating tracks
+ok 301 - temporal reset invalidates only requested history without conflating tracks
+  ---
+  duration_ms: 0.181759
+  type: 'test'
+  ...
+# Subtest: blue-noise tile is self-contained with balanced byte ranks
+ok 302 - blue-noise tile is self-contained with balanced byte ranks
+  ---
+  duration_ms: 1.573436
+  type: 'test'
+  ...
+# Subtest: field mode only runs spectral compute when a live volume consumes it
+ok 303 - field mode only runs spectral compute when a live volume consumes it
+  ---
+  duration_ms: 0.62923
+  type: 'test'
+  ...
+# Subtest: procedural cloud panel preserves the reference playground control vocabulary and order
+ok 304 - procedural cloud panel preserves the reference playground control vocabulary and order
+  ---
+  duration_ms: 0.13487
+  type: 'test'
+  ...
+# Subtest: reference-video cellular membrane preset captures the demonstrated extreme end-stop state
+ok 305 - reference-video cellular membrane preset captures the demonstrated extreme end-stop state
+  ---
+  duration_ms: 0.1756
+  type: 'test'
+  ...
+# Subtest: procedural cloud cache is budget-aware while retaining the requested extreme cache at normal budgets
+ok 306 - procedural cloud cache is budget-aware while retaining the requested extreme cache at normal budgets
+  ---
+  duration_ms: 0.48011
+  type: 'test'
+  ...
+# Subtest: procedural cloud cache cadence and interpolation are independent of display FPS
+ok 307 - procedural cloud cache cadence and interpolation are independent of display FPS
+  ---
+  duration_ms: 0.660376
+  type: 'test'
+  ...
+# Subtest: shared kinetic block packs cloud optics and independent world transform
+ok 308 - shared kinetic block packs cloud optics and independent world transform
+  ---
+  duration_ms: 0.347043
+  type: 'test'
+  ...
+# Subtest: mesh import formats include STL OBJ PLY GLB GLTF
+ok 309 - mesh import formats include STL OBJ PLY GLB GLTF
+  ---
+  duration_ms: 1.494369
+  type: 'test'
+  ...
+# Subtest: ASCII STL and OBJ produce triangle geometry
+ok 310 - ASCII STL and OBJ produce triangle geometry
+  ---
+  duration_ms: 0.64946
+  type: 'test'
+  ...
+# Subtest: minimal GLB 2.0 parses embedded indexed triangle
+ok 311 - minimal GLB 2.0 parses embedded indexed triangle
+  ---
+  duration_ms: 1.199824
+  type: 'test'
+  ...
+# Subtest: built-in D20 and projection knot survive conditioning and retessellation
+ok 312 - built-in D20 and projection knot survive conditioning and retessellation
+  ---
+  duration_ms: 168.350235
+  type: 'test'
+  ...
+# Subtest: packaged D20 showcase is the supplied detailed STL
+ok 313 - packaged D20 showcase is the supplied detailed STL
+  ---
+  duration_ms: 320.77584
+  type: 'test'
+  ...
+# Subtest: actual worker module generates, transfers and resumes HDR frames
+ok 314 - actual worker module generates, transfers and resumes HDR frames
+  ---
+  duration_ms: 97.975364
+  type: 'test'
+  ...
+# Subtest: bridge coalesces frame requests and rejects stale generations
+ok 315 - bridge coalesces frame requests and rejects stale generations
+  ---
+  duration_ms: 3.143278
+  type: 'test'
+  ...
+# Subtest: environment queue coalesces to the newest frame per mixer source without frame-completion gating
+ok 316 - environment queue coalesces to the newest frame per mixer source without frame-completion gating
+  ---
+  duration_ms: 0.254326
+  type: 'test'
+  ...
+# Subtest: camera right strafe follows the view right vector
+ok 317 - camera right strafe follows the view right vector
+  ---
+  duration_ms: 0.353563
+  type: 'test'
+  ...
+1..317
+# tests 317
+# suites 0
+# pass 317
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 707.218559
+XENOFIELD static contracts: 2503 passed. These are not GPU compilation or performance measurements.

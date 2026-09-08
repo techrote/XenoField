@@ -1,0 +1,116 @@
+{
+  "passed": 31,
+  "tests": [
+    "72 schema parameters use generated panel rows; RES/FPS stay in titlebar",
+    "All eleven functional panels have preset menus",
+    "Every functional panel has LOAD and SAVE",
+    "Global menu exposes Custom plus twelve defaults",
+    "SkySynth synthesis sliders are horizontal controls",
+    "HDRI picker advertises EXR and HDR first-class",
+    "Liquid controls are reduced to five clean tabs",
+    "Mixer and Noixture remain focused sidepanels",
+    "SkySynth panel preset loads",
+    "User SkySynth panel preset saves",
+    "Material panel loads independently",
+    "Global stack loads",
+    "Global stack resolves SkySynth preset name",
+    "Global stack resolves Surface preset name",
+    "User global stack saves",
+    "User global stack stores panel preset names only",
+    "#mixerBlend retains 34 practical blend modes",
+    "#noixtureBlend retains 34 practical blend modes",
+    "#cloudBlend retains 34 practical blend modes",
+    "#foamBlend retains 34 practical blend modes",
+    "Live mask remains routable",
+    "Radiance HDR publishes as HDRI input",
+    "Radiance HDR preserves HDR values",
+    "EXR publishes as HDRI input",
+    "Common EXR decodes locally",
+    "Bad EXR preserves last good HDRI",
+    "Source card clearly reports HDRI state",
+    "Advanced parameter editor opens",
+    "Advanced editor includes effect information",
+    "UI tooltip preference still works",
+    "No JavaScript page errors during bounded UI checks"
+  ],
+  "pageErrors": [],
+  "validationScope": "Offline DOM/component + local HDR/EXR decode test. Not a WebGPU rendered frame.",
+  "metrics": {
+    "version": "4.2a",
+    "globalStack": "Custom",
+    "panelPresets": {
+      "skysynth": "Custom",
+      "modulator": "HUE ORBIT",
+      "mixer": "SYNTH ONLY",
+      "noixture": "WEAVE NEON",
+      "mask": "Custom",
+      "liquid": "CROSS SEA",
+      "material": "BLACK GLASS",
+      "surface": "ENERGY SEAMS",
+      "atmosphere": "LUMINOUS HAZE",
+      "output": "HDR GLOW",
+      "lut": "MAGNETAR"
+    },
+    "mode": "liquid",
+    "environmentMode": "hdri",
+    "mixerEnabled": false,
+    "asset": "calibration-panorama.exr",
+    "fps": 0,
+    "renderer": {
+      "backend": "CPU environment preview only"
+    },
+    "generator": {
+      "frames": 38,
+      "pending": 0,
+      "originalWidth": 64,
+      "originalHeight": 32,
+      "peak": 13.901908874511719,
+      "sourceType": "exr",
+      "decoder": "local EXR (NONE/RLE/ZIP/ZIPS)",
+      "backend": "local HDRI decoder"
+    },
+    "gpuTimingsMs": null,
+    "errors": [
+      {
+        "at": "2026-09-06T14:31:48.841Z",
+        "message": "WebGPU is unavailable. Use a WebGPU-capable browser for liquid / planet rendering. WebGPU is unavailable in this browser/GPU configuration. Showing the CPU SkySynth/environment preview only."
+      },
+      {
+        "at": "2026-09-06T14:31:48.855Z",
+        "message": "Environment: Workers are unavailable here. Using a bounded 128\u00d764 / 15 Hz environment fallback."
+      },
+      {
+        "at": "2026-09-06T14:31:52.803Z",
+        "message": "LOADING CALIBRATION-PANORAMA.HDR\u2026"
+      },
+      {
+        "at": "2026-09-06T14:31:52.903Z",
+        "message": "calibration-panorama.hdr loaded: 64 \u00d7 32; GPU map 64 \u00d7 32; radiance peak 16.13."
+      },
+      {
+        "at": "2026-09-06T14:31:52.987Z",
+        "message": "HDRI loaded, but local asset storage is unavailable. Reload the file next session."
+      },
+      {
+        "at": "2026-09-06T14:31:53.037Z",
+        "message": "LOADING CALIBRATION-PANORAMA.EXR\u2026"
+      },
+      {
+        "at": "2026-09-06T14:31:53.125Z",
+        "message": "calibration-panorama.exr loaded: 64 \u00d7 32; GPU map 64 \u00d7 32; radiance peak 13.90."
+      },
+      {
+        "at": "2026-09-06T14:31:53.207Z",
+        "message": "HDRI loaded, but local asset storage is unavailable. Reload the file next session."
+      },
+      {
+        "at": "2026-09-06T14:31:53.269Z",
+        "message": "LOADING BAD.EXR\u2026"
+      },
+      {
+        "at": "2026-09-06T14:31:53.270Z",
+        "message": "HDRI LOAD FAILED: Not an OpenEXR file."
+      }
+    ]
+  }
+}

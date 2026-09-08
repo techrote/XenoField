@@ -74,4 +74,3 @@ npm run build:standalone  # regenerate the single-file version
 ```
 
 Optional validation tools are documented in `docs/VALIDATION.md`. Native Dawn and browser automation binaries are not runtime dependencies and are not included in the release.
-

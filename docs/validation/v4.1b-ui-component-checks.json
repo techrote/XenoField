@@ -1,0 +1,137 @@
+{
+  "passed": 61,
+  "tests": [
+    "All 74 numeric parameters have generated controls",
+    "Every numeric row has a limits button",
+    "Direct negative numeric entry commits",
+    "Per-parameter limits dialog opens",
+    "Advanced parameter dialog repeats useful effect information",
+    "Custom min/max limits commit",
+    "Changing limits preserves current value",
+    "Editable hard safety caps commit inside absolute engineering bounds",
+    "Functional extremums persist as reference metadata",
+    "UI settings can disable tooltips",
+    "UI settings can re-enable tooltips",
+    "Every button receives an enabled hover tooltip",
+    "Every slider receives an enabled hover tooltip",
+    "SkySynth exposes horizontal parameter sliders",
+    "SkySynth parameter sliders are not vertical",
+    "HDRI picker advertises EXR support",
+    "SkyNoixture opens as a SkySynth sidepanel",
+    "SkyNoixture overlay can be enabled",
+    "SkyMixer opens as a SkySynth sidepanel",
+    "SkyMixer can be enabled",
+    "#mixerBlend exposes all 34 performant blend modes",
+    "#noixtureBlend exposes all 34 performant blend modes",
+    "#cloudBlend exposes all 34 performant blend modes",
+    "#foamBlend exposes all 34 performant blend modes",
+    "Live mask channel enables",
+    "Mask source A/B routing commits",
+    "Mask source mixing mode commits",
+    "One live mask can route to additional elements",
+    "Unsafe range remains uncommitted",
+    "Unsafe bounds produce a readable error",
+    "Out-of-cap numeric entry cannot mutate settings",
+    "Global presets preserve the SkySynth FPS cap",
+    "Layout reset does not change the scene parameters",
+    "Bright workspace colour selects contrasting UI text",
+    "Randomize Undo restores the previous random pattern",
+    "Randomize has a working two-entry undo stack",
+    "SkySynth modulation meter toggles the modulator on/off",
+    "Transient modulation leaves the base speed unchanged",
+    "Transient modulation generates an actual output",
+    "LUT editor exposes all 256 colours",
+    "Malformed bulk LUT paste is atomic",
+    "Valid complete LUT paste commits all colours",
+    "LUT randomisation at 0% preserves the exact palette",
+    "LUT randomisation generates a new coherent palette",
+    "LUT text export uses 32 lines",
+    "HDRI file input selects the decoded shared environment",
+    "HDRI decode preserves values greater than one",
+    "Invalid HDRI leaves the last good environment intact",
+    "Switching back to the animated environment works",
+    "SkySynth drags by the empty title bar",
+    "SkySynth drag-resizes in the Y axis",
+    "Yellow title control minimizes SkySynth",
+    "Dock tab restores SkySynth",
+    "Pointer hold repeats parameter increments",
+    "Releasing a held key stops repeating",
+    "Typing in inputs never triggers keybed hotkeys",
+    "Named global preset save works",
+    "Named global preset load restores values",
+    "Portrait LUT grid uses eight columns",
+    "Portrait workspace has no horizontal document overflow",
+    "No JavaScript page errors during UI interactions"
+  ],
+  "pageErrors": [],
+  "validationScope": "Offline DOM/component test with bounded CPU fallback. Not a WebGPU rendered frame.",
+  "metrics": {
+    "version": "4.1b",
+    "preset": "UI test world",
+    "mode": "liquid",
+    "environmentMode": "plasma",
+    "mixerEnabled": false,
+    "asset": "calibration-panorama.hdr",
+    "fps": 0,
+    "renderer": {
+      "backend": "CPU environment preview only"
+    },
+    "generator": {
+      "frames": 280,
+      "pending": 0,
+      "patternTime": 0.29329333333333246,
+      "huePhase": 0.009350555555555527,
+      "modPhase": 0,
+      "modOutput": 0,
+      "workerMs": 3.2000000001862645,
+      "backend": "main-thread fallback (15 Hz cap)"
+    },
+    "gpuTimingsMs": null,
+    "errors": [
+      {
+        "at": "2026-09-06T13:40:03.801Z",
+        "message": "WebGPU is unavailable. Use a WebGPU-capable browser for liquid / planet rendering. WebGPU is unavailable in this browser/GPU configuration. Showing the CPU SkySynth/environment preview only."
+      },
+      {
+        "at": "2026-09-06T13:40:03.820Z",
+        "message": "Environment: Workers are unavailable here. Using a bounded 128\u00d764 / 15 Hz environment fallback."
+      },
+      {
+        "at": "2026-09-06T13:40:08.332Z",
+        "message": "SKYMIXER ENABLED WITHOUT AN HDRI: IT WILL REMAIN ON SKYSYNTH UNTIL AN HDRI IS LOADED."
+      },
+      {
+        "at": "2026-09-06T13:40:25.234Z",
+        "message": "Frequency X: active hard safety caps are -2.5\u20262.5."
+      },
+      {
+        "at": "2026-09-06T13:40:30.124Z",
+        "message": "A LUT must contain exactly 256 RRGGBB colours."
+      },
+      {
+        "at": "2026-09-06T13:40:30.811Z",
+        "message": "LUT EXPORTED AS TEXT."
+      },
+      {
+        "at": "2026-09-06T13:40:31.367Z",
+        "message": "Decoding calibration-panorama.hdr. The previous environment stays visible until the new map is ready."
+      },
+      {
+        "at": "2026-09-06T13:40:31.414Z",
+        "message": "calibration-panorama.hdr loaded: 64 \u00d7 32; GPU map 64 \u00d7 32; radiance peak 16.13."
+      },
+      {
+        "at": "2026-09-06T13:40:31.447Z",
+        "message": "HDRI loaded, but local asset storage is unavailable. Reload the file next session."
+      },
+      {
+        "at": "2026-09-06T13:40:31.925Z",
+        "message": "Decoding bad.hdr. The previous environment stays visible until the new map is ready."
+      },
+      {
+        "at": "2026-09-06T13:40:31.936Z",
+        "message": "Environment: Truncated HDR header."
+      }
+    ]
+  }
+}

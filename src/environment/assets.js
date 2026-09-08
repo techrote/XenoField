@@ -1,0 +1,4 @@
+/** Keep only the last panorama locally; project exports name it rather than embedding it. */
+function database(){return new Promise((resolve,reject)=>{const req=indexedDB.open('xenofield-environment',1);req.onupgradeneeded=()=>req.result.createObjectStore('asset');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});}
+export async function saveLastHDRI(file){const db=await database();try{await new Promise((resolve,reject)=>{const tx=db.transaction('asset','readwrite');tx.objectStore('asset').put(file,'current');tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);});}finally{db.close();}}
+export async function loadLastHDRI(){const db=await database();try{return await new Promise((resolve,reject)=>{const req=db.transaction('asset').objectStore('asset').get('current');req.onsuccess=()=>resolve(req.result||null);req.onerror=()=>reject(req.error);});}finally{db.close();}}

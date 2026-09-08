@@ -1,0 +1,68 @@
+{
+  "passed": 11,
+  "scope": "Local HTTP payload/content-type delivery only; no browser GPU claim",
+  "results": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 23779,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "bytes": 27993,
+      "type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "src/main.js",
+      "status": 200,
+      "bytes": 25349,
+      "type": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "src/render/kinetic/compositor.js",
+      "status": 200,
+      "bytes": 15445,
+      "type": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "src/render/kinetic/xenovolume.js",
+      "status": 200,
+      "bytes": 7571,
+      "type": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "src/render/kinetic/projection-cache.js",
+      "status": 200,
+      "bytes": 1015,
+      "type": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "assets/D20-showcase.stl",
+      "status": 200,
+      "bytes": 1186084,
+      "type": "application/octet-stream"
+    },
+    {
+      "path": "assets/calibration-panorama.exr",
+      "status": 200,
+      "bytes": 25401,
+      "type": "application/octet-stream"
+    },
+    {
+      "path": "Xenofield-standalone.html",
+      "status": 200,
+      "bytes": 2158117,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "not-a-file",
+      "status": 404
+    },
+    {
+      "path": "POST /",
+      "status": 405
+    }
+  ]
+}

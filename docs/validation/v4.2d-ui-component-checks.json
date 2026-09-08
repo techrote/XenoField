@@ -1,0 +1,86 @@
+{
+  "passed": 20,
+  "tests": [
+    "All 83 numeric parameters use schema-backed controls",
+    "All twelve functional panels expose preset menus",
+    "Global menu exposes Custom plus twelve defaults",
+    "Liquid window exposes six focused tabs including lighting",
+    "Liquid tab buttons live in the liquid titlebar",
+    "Liquid panel exposes a vertical resize handle",
+    "First-render click gate exists",
+    "Lighting tab exposes ambient/emissive/spot controls",
+    "SkySynth resolution and FPS are normal slider parameters",
+    "#upsampling exposes extended upsamplers",
+    "#upsamplingStageB exposes extended upsamplers",
+    "Image-processing stage can be pre/mid/post/none",
+    "Live performance profiler chart exists",
+    "HDRI picker advertises EXR/HDR first-class",
+    "Preview click collapses preview",
+    "Collapsed preview presents enable affordance",
+    "Preview can be re-enabled",
+    "EXR publishes as HDRI input",
+    "Common EXR decodes locally",
+    "No JavaScript page errors during bounded UI checks"
+  ],
+  "pageErrors": [],
+  "validationScope": "Offline DOM/component + local EXR decode test. Not a WebGPU rendered frame.",
+  "metrics": {
+    "version": "4.2d",
+    "globalStack": "Custom",
+    "panelPresets": {
+      "skysynth": "Custom",
+      "liquid": "Glass Swell",
+      "reflection": "Dark Chrome",
+      "pattern": "Signal Wakes",
+      "atmosphere": "Sealed Basin",
+      "lighting": "Noir Edge",
+      "output": "Hero Shot",
+      "modulation": "Loop Drift",
+      "lut": "Palette 1",
+      "noixture": "Weave Circuit",
+      "mixer": "Synth Only",
+      "mask": "Noise Window"
+    },
+    "mode": "liquid",
+    "environmentMode": "hdri",
+    "mixerEnabled": false,
+    "asset": "calibration-panorama.exr",
+    "fps": 0,
+    "renderer": {
+      "backend": "CPU environment preview only"
+    },
+    "generator": {
+      "frames": 1,
+      "pending": 0,
+      "originalWidth": 64,
+      "originalHeight": 32,
+      "peak": 13.901908874511719,
+      "sourceType": "exr",
+      "decoder": "local EXR (NONE/RLE/ZIP/ZIPS)",
+      "backend": "local HDRI decoder"
+    },
+    "profiling": {
+      "latest": null,
+      "historyLength": 0
+    },
+    "gpuTimingsMs": null,
+    "errors": [
+      {
+        "at": "2026-09-06T18:18:09.693Z",
+        "message": "Environment: Workers are unavailable here. Using a bounded 128\u00d764 / 15 Hz environment fallback."
+      },
+      {
+        "at": "2026-09-06T18:18:10.820Z",
+        "message": "LOADING CALIBRATION-PANORAMA.EXR\u2026"
+      },
+      {
+        "at": "2026-09-06T18:18:10.863Z",
+        "message": "calibration-panorama.exr loaded: 64 \u00d7 32; GPU map 64 \u00d7 32; radiance peak 13.90."
+      },
+      {
+        "at": "2026-09-06T18:18:10.863Z",
+        "message": "HDRI loaded, but local asset storage is unavailable. Reload the file next session."
+      }
+    ]
+  }
+}

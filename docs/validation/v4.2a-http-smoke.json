@@ -1,0 +1,56 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "length": 14242
+  },
+  {
+    "path": "/styles.css",
+    "status": 200,
+    "contentType": "text/css; charset=utf-8",
+    "length": 11374
+  },
+  {
+    "path": "/src/main.js",
+    "status": 200,
+    "contentType": "text/javascript; charset=utf-8",
+    "length": 18541
+  },
+  {
+    "path": "/src/core/store.js",
+    "status": 200,
+    "contentType": "text/javascript; charset=utf-8",
+    "length": 11905
+  },
+  {
+    "path": "/src/core/presets.js",
+    "status": 200,
+    "contentType": "text/javascript; charset=utf-8",
+    "length": 22873
+  },
+  {
+    "path": "/src/environment/bridge.js",
+    "status": 200,
+    "contentType": "text/javascript; charset=utf-8",
+    "length": 6613
+  },
+  {
+    "path": "/src/environment/exr.js",
+    "status": 200,
+    "contentType": "text/javascript; charset=utf-8",
+    "length": 7236
+  },
+  {
+    "path": "/assets/calibration-panorama.hdr",
+    "status": 200,
+    "contentType": "application/octet-stream",
+    "length": 8543
+  },
+  {
+    "path": "/assets/calibration-panorama.exr",
+    "status": 200,
+    "contentType": "application/octet-stream",
+    "length": 25401
+  }
+]

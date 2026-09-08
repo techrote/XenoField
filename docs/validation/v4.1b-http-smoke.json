@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "bytes": 12518
+  },
+  {
+    "path": "/src/main.js",
+    "status": 200,
+    "bytes": 18325
+  },
+  {
+    "path": "/src/ui/ui.js",
+    "status": 200,
+    "bytes": 29487
+  },
+  {
+    "path": "/src/core/parameters.js",
+    "status": 200,
+    "bytes": 14395
+  },
+  {
+    "path": "/src/render/shaders.js",
+    "status": 200,
+    "bytes": 18760
+  },
+  {
+    "path": "/src/render/renderer.js",
+    "status": 200,
+    "bytes": 16743
+  },
+  {
+    "path": "/styles.css",
+    "status": 200,
+    "bytes": 13574
+  },
+  {
+    "path": "/Xenofield-standalone.html",
+    "status": 200,
+    "bytes": 199262
+  }
+]

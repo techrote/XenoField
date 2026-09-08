@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <title>ABYSSAL · XENOFIELD 4.4b</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="workspace">
+  <canvas id="scene" tabindex="0" aria-label="ALIEN LIQUID AND ENERGY FIELD VIEWPORT"></canvas>
+  <canvas id="fallback" class="hidden" aria-label="CPU ENVIRONMENT PREVIEW"></canvas>
+  <div id="renderGate" class="render-gate hidden"><b>CLICK RENDER AREA TO START</b><span>GPU INITIALISATION AND FIRST FRAME ARE DEFERRED UNTIL INPUT.</span></div>
+
+  <div id="mainbar">
+    <div class="traffic">
+      <button class="lamp red" id="layoutReset" title="RESET WINDOW LAYOUT" aria-label="RESET WINDOW LAYOUT"></button>
+      <button class="lamp yellow" id="hidePanels" title="HIDE OR RESTORE PANELS" aria-label="HIDE OR RESTORE PANELS"></button>
+      <button class="lamp green" id="fullscreen" title="TOGGLE FULLSCREEN" aria-label="TOGGLE FULLSCREEN"></button>
+    </div>
+    <div class="global-stack">
+      <b>GLOBAL</b>
+      <select id="globalPreset" aria-label="GLOBAL PRESET STACK"></select>
+      <button id="loadGlobal">LOAD</button>
+      <button id="saveGlobal">SAVE</button>
+      <button id="deleteGlobal" title="DELETE USER GLOBAL STACK">−</button>
+    </div>
+    <nav id="dock" aria-label="WINDOW CONTROLS"></nav>
+    <span class="bar-spacer"></span>
+    <details id="uiSettingsMenu" class="ui-menu"><summary>UI SETTINGS</summary><div><label class="check-row"><input id="tooltipsEnabled" type="checkbox" checked> TOOLTIPS</label></div></details>
+    <label class="header-number">BG<input id="headerBG" type="text" aria-label="WORKSPACE BACKGROUND HEX" maxlength="7"></label>
+    <button id="exportProject" title="EXPORT PROJECT, PANEL PRESETS, GLOBAL STACKS, RANGES AND LUTS">EXPORT</button>
+    <button id="importProject">IMPORT</button>
+    <button id="capture">PNG</button>
+  </div>
+
+  <div id="identity"><b>XENOFIELD</b><span>ABYSSAL / 4.4b</span><p>ALIEN LIQUID · SYNTHETIC RADIANCE</p></div>
+  <div id="status" role="status">INITIALISING SHARED HDR ENVIRONMENT…</div>
+  <div id="notification" role="alert" class="hidden"></div>
+  <div id="boot"><b>XENOFIELD</b><p id="bootText">PREPARING SKYSYNTH AND SPECTRAL LIQUID…</p></div>
+
+  <section id="skysynth" class="window" aria-label="SKYSYNTH">
+    <div class="titlebar">
+      <button class="lamp yellow" data-minimize="skysynth" aria-label="MINIMIZE SKYSYNTH"></button>
+      <b class="titlebar-name">SKYSYNTH</b>
+      <button class="panel-global-lock" data-panel-global-lock="skysynth" type="button">G:NONE</button>
+      <span class="titlebar-spacer"></span>
+      <button id="openNoixture" class="panel-toggle">NOIX</button>
+      <button id="openMixer" class="panel-toggle">MIX</button>
+      <button id="openMask" class="panel-toggle">MASK</button>
+      <button id="openModulation" class="panel-toggle">MOD</button>
+    </div>
+      <div id="previewWrap" class="preview-wrap"><canvas id="envPreview" width="256" height="128" aria-label="SHARED ENVIRONMENT PANORAMA" title="CLICK TO DISABLE PREVIEW"></canvas><button id="previewToggleText" class="preview-toggle-text" type="button">CLICK TO ENABLE PREVIEW</button><button id="skyModMeter" class="vertical-meter" aria-label="TOGGLE MODULATION"><i></i><span>MOD</span></button></div>
+    <div class="window-body skysynth-scroll">
+      <div class="panel-preset" data-panel-preset="skysynth"><b>PRESET</b><select id="preset-skysynth"></select><button data-panel-load="skysynth">LOAD</button><button data-panel-save="skysynth">SAVE</button><button data-panel-delete="skysynth">−</button></div>
+      <div class="source-card"><div class="select-row source-row"><label>SOURCE<select id="envMode"><option value="plasma">SKYSYNTH</option><option value="hdri">HDRI / EXR</option></select></label><button id="loadHDRI">LOAD HDRI / EXR</button></div><div id="assetName">NO HDRI LOADED</div><div class="source-meta"><span id="sourceState" class="source-state">SKYSYNTH ACTIVE</span><span id="sourceInfo">—</span></div></div>
+      <div class="upsampling-row">
+        <label>STAGE A<select id="upsampling"><option value="nearest">NEAREST</option><option value="linear">LINEAR</option><option value="smooth">SMOOTH</option><option value="bicubic">BICUBIC</option><option value="catmull-rom">CATMULL-ROM</option><option value="lanczos2">LANCZOS2</option></select></label>
+        <label>STAGE B<select id="upsamplingStageB"><option value="none">NONE</option><option value="nearest">NEAREST</option><option value="linear">LINEAR</option><option value="smooth">SMOOTH</option><option value="bicubic">BICUBIC</option><option value="catmull-rom">CATMULL-ROM</option><option value="lanczos2">LANCZOS2</option></select></label>
+        <label>FILTER<select id="processingStage"><option value="none">NONE</option><option value="pre">PRE</option><option value="mid">MID</option><option value="post">POST</option></select></label>
+        <div id="upsamplingQuick" class="quick-params"></div>
+      </div>
+      <details><summary><span>SYNTH</span><button class="lock-toggle" data-submenu-lock="skysynth-synth" type="button">OFF</button></summary><div id="plasmaControls" class="skysynth-params"></div></details>
+      <details><summary>KEY CONTROLS</summary><div id="keycaps" class="keycap-functions"></div><div class="button-row compact"><button id="latchOne" aria-pressed="false">+</button><button id="latchTwo" aria-pressed="false">++</button><button id="randomPattern">RANDOMIZE</button><button id="undoPattern">UNDO</button><button id="resetKeybed">RESET</button></div></details>
+      <details><summary><span>SAMPLING / ENVIRONMENT</span><button class="lock-toggle" data-submenu-lock="skysynth-sampling" type="button">OFF</button></summary><div id="samplingControls"></div><div id="environmentControls"></div></details>
+    </div>
+
+    <aside id="modulation" class="sidepanel hidden" aria-label="SKYSYNTH MODULATION"><div class="sidepanel-head"><b>MODULATOR</b><button data-side-close="modulation">×</button></div><div class="sidepanel-body"><div class="panel-preset" data-panel-preset="modulation"><b>PRESET</b><button class="lock-toggle" data-submenu-lock="modulation" type="button">OFF</button><select id="preset-modulation"></select><button data-panel-load="modulation">LOAD</button><button data-panel-save="modulation">SAVE</button><button data-panel-delete="modulation">−</button></div><div class="mod-meter horizontal"><i id="modMeterFill"></i><span id="modMeterValue">0.00</span></div><div class="button-row"><button id="modEnable" aria-pressed="false">OFF</button><select id="modWave"><option value="sine">SINE</option><option value="smooth-triangle">SMOOTH TRIANGLE</option><option value="loop-noise">LOOP NOISE</option><option value="wander-noise">WANDER NOISE</option></select><button id="resetMod">RESET</button></div><div id="modTargets" class="target-row"></div><div id="modControls"></div><output id="modOutput">MOD 0.00</output></div></aside>
+    <aside id="skynoixture" class="sidepanel hidden" aria-label="SKYNOIXTURE"><div class="sidepanel-head"><b>SKYNOIXTURE</b><button data-side-close="skynoixture">×</button></div><div class="sidepanel-body"><div class="panel-preset" data-panel-preset="noixture"><b>PRESET</b><button class="lock-toggle" data-submenu-lock="noixture" type="button">OFF</button><select id="preset-noixture"></select><button data-panel-load="noixture">LOAD</button><button data-panel-save="noixture">SAVE</button><button data-panel-delete="noixture">−</button></div><label class="check-row"><input id="noixtureEnabled" type="checkbox"> ENABLE</label><div class="select-row"><label>TEXTURE<select id="noixtureMode"><option value="perlin">PERLIN</option><option value="billow">BILLOW</option><option value="ridge">RIDGE</option><option value="weave">WEAVE</option></select></label><label>BLEND<select id="noixtureBlend" data-blend-select></select></label></div><label class="color-row">TINT<input id="noixtureColor" maxlength="7"></label><div id="noixtureControls"></div></div></aside>
+    <aside id="skymixer" class="sidepanel hidden" aria-label="SKYMIXER"><div class="sidepanel-head"><b>SKYMIXER</b><button data-side-close="skymixer">×</button></div><div class="sidepanel-body"><div class="panel-preset" data-panel-preset="mixer"><b>PRESET</b><button class="lock-toggle" data-submenu-lock="mixer" type="button">OFF</button><select id="preset-mixer"></select><button data-panel-load="mixer">LOAD</button><button data-panel-save="mixer">SAVE</button><button data-panel-delete="mixer">−</button></div><label class="check-row"><input id="mixerEnabled" type="checkbox"> ENABLE</label><div class="mixer-flow"><span>SKYSYNTH</span><b>↔</b><span>HDRI</span></div><div class="select-row"><label>BLEND<select id="mixerBlend" data-blend-select></select></label></div><div id="mixerControls"></div><p class="panel-note">HDRI CAN BE ABSENT: THE MIXER THEN FAILS OPEN TO SKYSYNTH.</p></div></aside>
+    <aside id="maskpanel" class="sidepanel hidden" aria-label="LIVE MASK"><div class="sidepanel-head"><b>MASK</b><button data-side-close="maskpanel">×</button></div><div class="sidepanel-body"><div class="panel-preset" data-panel-preset="mask"><b>PRESET</b><button class="lock-toggle" data-submenu-lock="mask" type="button">OFF</button><select id="preset-mask"></select><button data-panel-load="mask">LOAD</button><button data-panel-save="mask">SAVE</button><button data-panel-delete="mask">−</button></div><label class="check-row"><input id="maskEnabled" type="checkbox"> ENABLE</label><div class="select-row"><label>SOURCE A<select id="maskSourceA"></select></label><label>SOURCE B<select id="maskSourceB"></select></label></div><div class="select-row"><label>MIX<select id="maskMixMode"></select></label><label class="check-row inline-check"><input id="maskInvert" type="checkbox"> INVERT</label></div><div class="mask-routing"><b>ROUTE TO</b><label><input id="maskMixer" type="checkbox"> MIXER</label><label><input id="maskNoixture" type="checkbox"> NOIXTURE</label><label><input id="maskClouds" type="checkbox"> CLOUDS</label><label><input id="maskFoam" type="checkbox"> FOAM</label></div><div id="maskControls"></div></div></aside>
+    <div id="skyYResize" class="y-resize-handle" role="separator" aria-orientation="horizontal"></div>
+  </section>
+
+  <section id="surface" class="window" aria-label="LIQUID CONTROLS">
+    <div class="titlebar liquid-titlebar"><button class="lamp yellow" data-minimize="surface"></button><nav id="liquidTabs" class="tabs title-tabs"><button data-tab="motion" class="active">MOTION</button><button data-tab="mesh">MESH</button><button data-tab="material">MATERIAL</button><button data-tab="surfacefx">SURFACE</button><button data-tab="atmosphere">ATMOS</button><button data-tab="lighting">LIGHT</button><button data-tab="output">OUTPUT</button></nav><button class="panel-global-lock" data-panel-global-lock="surface" type="button">G:NONE</button><button id="resetCamera" class="panel-toggle">CAM</button></div>
+    <div class="window-body">
+      <section class="tab-page active" data-tab-page="motion"><div class="panel-preset" data-panel-preset="liquid"><b>PRESET</b><button class="lock-toggle" data-submenu-lock="surface-motion" type="button">OFF</button><select id="preset-liquid"></select><button data-panel-load="liquid">LOAD</button><button data-panel-save="liquid">SAVE</button><button data-panel-delete="liquid">−</button></div><div class="select-row"><label>VIEW<select id="sceneMode"><option value="liquid">LIQUID SURFACE</option><option value="planet">ORBITAL PLANET</option><option value="field">ENERGY FIELD ONLY</option><option value="mesh">IMPORTED / PROJECTED MESH</option></select></label><button id="pause">PAUSE</button></div><div id="liquidControls"></div></section>
+
+      <section class="tab-page" data-tab-page="mesh">
+        <div class="panel-preset" data-panel-preset="geometry"><b>GEOMETRY PRESET</b><button class="lock-toggle" data-submenu-lock="surface-geometry" type="button">OFF</button><select id="preset-geometry"></select><button data-panel-load="geometry">LOAD</button><button data-panel-save="geometry">SAVE</button><button data-panel-delete="geometry">−</button></div>
+        <div class="mesh-toolbar"><label>ASSET<select id="meshAsset"><option value="showcase">PROJECTION KNOT</option><option value="d20">D20 SHOWCASE · SUPPLIED STL</option><option value="imported">IMPORTED</option></select></label><button id="loadMesh" type="button">IMPORT MESH</button><span id="meshState">BUILT-IN PROJECTION KNOT</span></div>
+        <div class="mesh-options"><label><input id="meshRetessellate" type="checkbox"> RETESSELLATE</label><label><input id="meshPreserveBoundary" type="checkbox"> PRESERVE BOUNDARY</label><label><input id="meshPreserveHardEdges" type="checkbox"> PRESERVE HARD EDGES</label><label>SPIKES<select id="meshSpikeMode"><option value="leave">LEAVE</option><option value="relax">RELAX</option><option value="clamp">CLAMP</option><option value="cull">CULL</option></select></label></div>
+        <details><summary><span>GEOMETRY CONDITIONING</span><button class="lock-toggle" data-submenu-lock="surface-geometry" type="button">OFF</button></summary><div id="geometryControls"></div></details>
+        <div class="panel-preset" data-panel-preset="projection"><b>PROJECTION PRESET</b><button class="lock-toggle" data-submenu-lock="surface-projection" type="button">OFF</button><select id="preset-projection"></select><button data-panel-load="projection">LOAD</button><button data-panel-save="projection">SAVE</button><button data-panel-delete="projection">−</button></div>
+        <div class="projection-grid"><label>A<select id="projectionA"></select></label><label>B<select id="projectionB"></select></label><label>BLEND MASK<select id="projectionMaskSource"></select></label><label>WRAP<select id="projectionWrap"></select></label><label>DISPLACEMENT<select id="displacementProjection"></select></label><label>PATTERN / NORMAL<select id="patternProjection"></select></label><label>FOAM<select id="foamProjection"></select></label><label>EMISSION<select id="emissionProjection"></select></label><label>REFLECTION / NOIXTURE<select id="reflectionProjection"></select></label><label>MASK COORDS<select id="maskProjection"></select></label></div>
+        <details><summary><span>PROJECTION TRANSFORM / BLEND</span><button class="lock-toggle" data-submenu-lock="surface-projection" type="button">OFF</button></summary><div id="projectionControls"></div></details>
+      </section>
+      <section class="tab-page" data-tab-page="material"><div class="panel-preset" data-panel-preset="reflection"><b>PRESET</b><button class="lock-toggle" data-submenu-lock="surface-material" type="button">OFF</button><select id="preset-reflection"></select><button data-panel-load="reflection">LOAD</button><button data-panel-save="reflection">SAVE</button><button data-panel-delete="reflection">−</button></div><div id="reflectionControls"></div><label class="color-row">BODY TINT<input id="bodyColor" maxlength="7"></label><label class="check-row"><input id="showSky" type="checkbox"> DISPLAY SKY</label></section>
+      <section class="tab-page" data-tab-page="surfacefx"><div class="panel-preset" data-panel-preset="pattern"><b>PRESET</b><button class="lock-toggle" data-submenu-lock="surface-pattern" type="button">OFF</button><select id="preset-pattern"></select><button data-panel-load="pattern">LOAD</button><button data-panel-save="pattern">SAVE</button><button data-panel-delete="pattern">−</button></div><div class="select-row"><label>FOAM BLEND<select id="foamBlend" data-blend-select></select></label></div><div id="patternControls"></div><label class="color-row">FOAM / FILAMENT TINT<input id="foamColor" maxlength="7"></label></section>
+      <section class="tab-page" data-tab-page="atmosphere"><div class="panel-preset" data-panel-preset="atmosphere"><b>PRESET</b><button class="lock-toggle" data-submenu-lock="surface-atmosphere" type="button">OFF</button><select id="preset-atmosphere"></select><button data-panel-load="atmosphere">LOAD</button><button data-panel-save="atmosphere">SAVE</button><button data-panel-delete="atmosphere">−</button></div><div class="select-row"><label>CLOUD BLEND<select id="cloudBlend" data-blend-select></select></label></div><div id="distanceControls"></div></section>
+      <section class="tab-page" data-tab-page="lighting"><div class="panel-preset" data-panel-preset="lighting"><b>PRESET</b><button class="lock-toggle" data-submenu-lock="surface-lighting" type="button">OFF</button><select id="preset-lighting"></select><button data-panel-load="lighting">LOAD</button><button data-panel-save="lighting">SAVE</button><button data-panel-delete="lighting">−</button></div><div class="light-switches"><label><input id="ambientEnabled" type="checkbox"> AMBIENT</label><label><input id="emissiveEnabled" type="checkbox"> EMISSIVE</label><label><input id="spotEnabled" type="checkbox"> SPOT</label></div><div class="light-colors"><label>AMBIENT<input id="ambientColor" type="text" maxlength="7"></label><label>EMISSIVE<input id="emissiveColor" type="text" maxlength="7"></label><label>SPOT<input id="spotColor" type="text" maxlength="7"></label></div><div id="lightingControls"></div></section>
+      <section class="tab-page output-tab-page" data-tab-page="output"><div class="profiler-pin"><canvas id="profilerChart" class="profiler-chart" width="340" height="180"></canvas><div id="profilerLegend" class="profiler-legend"></div></div><div class="panel-preset" data-panel-preset="output"><b>PRESET</b><button class="lock-toggle" data-submenu-lock="surface-output" type="button">OFF</button><select id="preset-output"></select><button data-panel-load="output">LOAD</button><button data-panel-save="output">SAVE</button><button data-panel-delete="output">−</button></div><div id="finishControls"></div><details><summary>PERFORMANCE</summary><div id="renderControls"></div></details><div class="button-row"><button id="restart">RESTART RENDERER</button><button id="diagnostics">DIAGNOSTICS</button></div><pre id="metrics"></pre></section>
+    </div>
+    <div id="surfaceYResize" class="y-resize-handle" role="separator" aria-orientation="horizontal"></div>
+  </section>
+
+  <section id="lut" class="window hidden" aria-label="LUT EDITOR">
+    <div class="titlebar lut-titlebar">
+      <button class="lamp yellow" data-minimize="lut"></button><b class="titlebar-name">LUT</b>
+      <div class="lut-title-tools" role="toolbar" aria-label="LUT editing tools">
+        <button id="lutToolSelect" type="button">SEL</button><button id="lutToolBrush" type="button">BRUSH</button><button id="lutToolPick" type="button">PICK</button>
+        <span class="lut-tool-sep"></span><button id="lutUndo" type="button">UNDO</button><button id="lutRedo" type="button">REDO</button>
+        <span class="lut-tool-sep"></span><button id="lutSelectAll" type="button">ALL</button><button id="lutSelectNone" type="button">NONE</button>
+        <button id="lutCopy" type="button">COPY</button><button id="lutCut" type="button">CUT</button><button id="lutPaste" type="button">PASTE</button>
+      </div>
+      <span class="titlebar-spacer"></span><button class="panel-global-lock" data-panel-global-lock="lut" type="button">G:NONE</button>
+    </div>
+    <div class="window-body lut-window-body">
+      <div class="panel-preset" data-panel-preset="lut"><b>PRESET</b><button class="lock-toggle" data-submenu-lock="lut" type="button">OFF</button><select id="preset-lut"></select><button data-panel-load="lut">LOAD</button><button data-panel-save="lut">SAVE</button><button data-panel-delete="lut">−</button></div>
+      <header class="lut-io-row"><select id="lutSlot"></select><button id="exportLUT">EXPORT LUT</button><button id="importLUT">IMPORT LUT</button><button id="randomLUT">RANDOMISE</button><span id="lutSelectionStatus">NO SELECTION</span></header>
+      <div id="lutControls"></div><canvas id="lutStrip" width="512" height="16" aria-label="LUT strip"></canvas>
+      <div class="lut-editor-layout">
+        <div class="lut-grid-wrap"><div id="lutGrid" tabindex="0" aria-label="16 by 16 LUT editor grid"></div></div>
+        <aside class="lut-paint-panel">
+          <section><b>COLOURS</b><div class="lut-color-row"><span id="lutSwatchA" class="lut-swatch"></span><label>A<input id="lutColorA" type="color" value="#ED57AE"></label><input id="lutColorAHex" maxlength="6" value="ED57AE"></div><div class="lut-color-row"><span id="lutSwatchB" class="lut-swatch"></span><label>B<input id="lutColorB" type="color" value="#32A68F"></label><input id="lutColorBHex" maxlength="6" value="32A68F"></div><button id="lutSwapColors" type="button">SWAP A/B</button></section>
+          <section><b>SELECTION</b><div class="lut-compact-grid"><button id="lutInvertSelection" type="button">INVERT</button><button id="lutSelectRow" type="button">ROW</button><button id="lutSelectColumn" type="button">COLUMN</button><button id="lutFlipH" type="button">FLIP H</button><button id="lutFlipV" type="button">FLIP V</button><button id="lutRotate180" type="button">ROT 180</button></div></section>
+          <section><b>PAINT</b><label>BRUSH SHAPE<select id="lutBrushShape"><option value="pixel">PIXEL</option><option value="round" selected>ROUND</option><option value="square">SQUARE</option><option value="diamond">DIAMOND</option><option value="irregular">IRREGULAR</option></select></label><label>BRUSH SIZE<input id="lutBrushSize" type="number" min="1" max="5" value="2"></label><div class="lut-compact-grid"><button id="lutFill" type="button">FILL A</button><button id="lutGradient" type="button">GRADIENT</button></div><label>GRADIENT<select id="lutGradientMode"><option value="horizontal">HORIZONTAL</option><option value="vertical">VERTICAL</option><option value="diagonal">DIAGONAL</option><option value="radial">RADIAL</option></select></label></section>
+          <p class="lut-help">DRAG: RECT SELECT · SHIFT ADD · CTRL TOGGLE · ALT SUBTRACT<br>BRUSH: LEFT=A · RIGHT=B · PICK: LEFT=A / RIGHT=B<br>DOUBLE-CLICK CELL: DIRECT HEX EDIT · CTRL+C/X/V/Z/Y SUPPORTED</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <dialog id="rangeDialog"><form id="rangeForm"><header><h2 id="rangeTitle">PARAMETER</h2><span>ADVANCED CONTROL</span></header><p id="rangeInfo" class="parameter-info"></p><div class="advanced-grid"><fieldset><legend>SLIDER WINDOW</legend><label>MIN<input id="rangeMin" type="number" step="any"></label><label>MAX<input id="rangeMax" type="number" step="any"></label></fieldset><fieldset><legend>HARD SAFETY CAPS</legend><label>MIN<input id="hardMin" type="number" step="any"></label><label>MAX<input id="hardMax" type="number" step="any"></label><p id="absoluteBounds"></p></fieldset><fieldset><legend>FUNCTIONAL EXTREMUMS</legend><label>MIN<input id="functionalMin" type="number" step="any"></label><label>MAX<input id="functionalMax" type="number" step="any"></label><p>REFERENCE ONLY.</p></fieldset></div><p id="rangeError" class="error"></p><div class="button-row"><button type="button" id="rangeDefault">DEFAULT SLIDER</button><button type="button" id="hardDefault">DEFAULT SAFETY</button><button type="button" id="rangeCancel">CANCEL</button><button type="submit">APPLY</button></div></form></dialog>
+  <input id="meshFile" type="file" accept=".stl,.obj,.ply,.glb,.gltf" hidden>
+  <input id="hdriFile" type="file" accept=".exr,.hdr,.rgbe,.png,.jpg,.jpeg,.webp" hidden>
+  <input id="projectFile" type="file" accept=".json" hidden>
+  <input id="lutFile" type="file" accept=".txt,.json,.lut" hidden>
+</main>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

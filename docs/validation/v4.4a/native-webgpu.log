@@ -1,0 +1,219 @@
+CASE all effects off OK
+CASE depth / pyramid / bands OK
+CASE stable + feedback independent OK
+CASE 32 cube sparse volume OK
+CASE cached short march OK
+CASE cached mip shadow OK
+CASE signed bloom / distortion OK
+CASE scene material depth mask OK
+CASE MSAA4 + SSAA2 + Temporal32 OK
+CASE SSAA8 bounded / AF16 OK
+CASE mesh + manual AF32 OK
+CASE planet shell OK
+CASE resize active histories OK
+CASE disable all optional passes OK
+CASE matrix baseline OK
+CASE cache 16³ OK
+CASE cache 24³ OK
+CASE cache 32³ OK
+CASE cache 48³ OK
+CASE cache 64³ OK
+CASE cache 96³ OK
+CASE ray steps 4 OK
+CASE ray steps 6 OK
+CASE ray steps 8 OK
+CASE ray steps 12 OK
+CASE ray steps 16 OK
+CASE ray steps 24 OK
+CASE ray steps 32 OK
+CASE ray resolution 1/1 OK
+CASE ray resolution 1/2 OK
+CASE ray resolution 1/3 OK
+CASE ray resolution 1/4 OK
+CASE ray resolution 1/6 OK
+CASE ray resolution 1/8 OK
+CASE lighting gradient OK
+CASE lighting cached-march OK
+CASE lighting mip-shadow OK
+CASE lighting unlit OK
+CASE lighting live-march-experimental OK
+CASE space world-box OK
+CASE space camera-slab OK
+CASE space surface-shell OK
+CASE space planet-shell OK
+CASE space mesh-local OK
+CASE space mesh-normal-shell OK
+CASE space screen-extrusion OK
+CASE space infinite-tiled OK
+CASE generator perlin OK
+CASE generator billow OK
+CASE generator ridge OK
+CASE generator voronoi OK
+CASE generator cellular OK
+CASE generator spectral OK
+CASE generator projection OK
+CASE generator noixture OK
+CASE generator skysynth OK
+CASE generator hash OK
+CASE field volume drives live spectral compute OK
+CASE field procedural source stops spectral compute OK
+CASE shape none OK
+CASE shape fold OK
+CASE shape abs OK
+CASE shape difference OK
+CASE shape mirror OK
+CASE shape repeat OK
+CASE generator blend mix OK
+CASE generator blend multiply OK
+CASE generator blend add OK
+CASE generator blend difference OK
+CASE generator blend xor OK
+CASE dither ign OK
+CASE dither bayer4 OK
+CASE dither blue-noise OK
+CASE dither hash OK
+CASE dither none OK
+CASE volume blend alpha OK
+CASE volume blend add OK
+CASE volume blend screen OK
+CASE volume blend multiply OK
+CASE volume blend difference OK
+CASE volume blend absorption OK
+CASE volume blend distortion OK
+CASE volume blend lut OK
+CASE volume blend mask OK
+CASE surface filter nearest OK
+CASE surface filter bilinear OK
+CASE surface filter trilinear OK
+CASE surface filter af2 OK
+CASE surface filter af4 OK
+CASE surface filter af8 OK
+CASE surface filter af16 OK
+CASE surface filter manual32 OK
+CASE SSAA reconstruction box OK
+CASE SSAA reconstruction bilinear OK
+CASE SSAA reconstruction catmull-rom OK
+CASE SSAA reconstruction lanczos2 OK
+CASE temporal target off OK
+CASE temporal target 2 OK
+CASE temporal target 4 OK
+CASE temporal target 8 OK
+CASE temporal target 16 OK
+CASE temporal target 32 OK
+CASE feedback blend mix OK
+CASE feedback blend add OK
+CASE feedback blend screen OK
+CASE feedback blend multiply OK
+CASE feedback blend difference OK
+CASE feedback blend max OK
+CASE feedback blend min OK
+CASE depth operator colour OK
+CASE depth operator lut OK
+CASE depth operator posterize OK
+CASE depth operator bands OK
+CASE depth operator contours OK
+CASE depth operator edge-glow OK
+CASE depth operator edge-darken OK
+CASE depth operator desaturate OK
+CASE depth operator hue OK
+CASE depth operator fog OK
+CASE depth operator inversion OK
+CASE distortion normal OK
+CASE distortion depth-gradient OK
+CASE distortion volume-gradient OK
+CASE distortion procedural OK
+CASE distortion mask OK
+CASE distortion history-difference OK
+CASE distortion noixture OK
+CASE distortion projection OK
+CASE debug final OK
+CASE debug linear-depth OK
+CASE debug depth-pyramid OK
+CASE debug surface-aux OK
+CASE debug surface-normal OK
+CASE debug surface-energy OK
+CASE debug volume-density OK
+CASE debug volume-light OK
+CASE debug volume-edge OK
+CASE debug volume-emission OK
+CASE debug raw-volume OK
+CASE debug temporal-history OK
+CASE debug history-rejection OK
+CASE debug feedback OK
+CASE debug positive-bloom OK
+CASE debug dark-bloom OK
+CASE debug distortion-vector OK
+CASE debug mask-router OK
+CASE coincident depth endpoints and hard thresholds OK
+CASE extreme feedback remains finite OK
+CASE new cache target with scene volume mask OK
+CASE same scene allocation / new volume target OK
+CASE camera cut OK
+CASE slow density and light clocks OK
+CASE lighting edit bypasses slow cadence OK
+CASE one density generation each frame OK
+CASE shared surface/cache projection planar-xz OK
+CASE shared surface/cache projection planar-xy OK
+CASE shared surface/cache projection planar-yz OK
+CASE shared surface/cache projection uv OK
+CASE shared surface/cache projection spherical OK
+CASE shared surface/cache projection equal-area OK
+CASE shared surface/cache projection cubemap OK
+CASE shared surface/cache projection octahedral OK
+CASE shared surface/cache projection triplanar OK
+CASE shared surface/cache projection cylindrical OK
+CASE shared surface/cache projection radial OK
+CASE shared surface/cache projection object3d OK
+CASE shared surface/cache projection world3d OK
+CASE shared surface/cache projection tangent-local OK
+CASE shared surface/cache projection camera OK
+CASE shared surface/cache projection projector OK
+CASE shared surface/cache projection reflection-vector OK
+CASE shared surface/cache projection polar-crush OK
+CASE shared surface/cache projection axis-dominant OK
+CASE shared surface/cache projection quantized-normal OK
+CASE scene and cache mask scene-depth OK
+CASE scene and cache mask inverse-depth OK
+CASE scene and cache mask depth-edge OK
+CASE scene and cache mask depth-band OK
+CASE scene and cache mask depth-sine OK
+CASE scene and cache mask depth-quantized OK
+CASE scene and cache mask depth-gradient OK
+CASE scene and cache mask silhouette OK
+CASE scene and cache mask normal-facing OK
+CASE scene and cache mask normal-edge OK
+CASE scene and cache mask surface-energy OK
+CASE scene and cache mask volume-density OK
+CASE scene and cache mask volume-light OK
+CASE scene and cache mask volume-edge OK
+CASE scene and cache mask volume-emission OK
+CASE scene and cache mask history-luma OK
+CASE scene and cache mask history-difference OK
+CASE scene and cache mask feedback OK
+CASE imported OBJ with a normal shell OK
+CASE same imported asset rebuilt at another scale OK
+CASE odd-sized linear-depth pyramid pixels OK
+CASE depth-clipped shell pixel contract OK
+CASE EXR environment with compositor and mixer OK
+CASE volume environment SkySynth reference OK
+CASE volume environment consumes selected HDRI OK
+CASE absorption low OK
+CASE absorption high OK
+CASE RGBA16F cache fallback execution OK
+CASE fail-open unavailable volume OK
+CASE fail-open unavailable depth pyramid OK
+CASE fail-open unavailable temporal OK
+CASE MSAA setup fallback to 1x OK
+CASE valid frame after isolated shader failure OK
+CASE demo VOXEL SPRAY OK
+CASE demo ION VEIL OK
+CASE demo PHASE DUST OK
+CASE demo CELLULAR STORM OK
+CASE demo VOID HALO OK
+CASE demo TEMPORAL CRYSTAL OK
+CASE demo CHROMATIC SHELL OK
+CASE demo DENSE NEBULA OK
+CASE demo IMPOSSIBLE ATMOSPHERE OK
+CASE demo ABSURD AA OK
+CASE final all-off bypass OK
+CASE device destroy and fresh renderer restart OK

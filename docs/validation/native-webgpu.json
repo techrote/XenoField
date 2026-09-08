@@ -1,0 +1,242 @@
+{
+  "kind": "Native Dawn / software-adapter integration validation; not a browser or hardware benchmark",
+  "started": "2026-09-07T00:27:06.382Z",
+  "initialization": true,
+  "cases": [
+    {
+      "name": "all effects off",
+      "errors": [],
+      "renderSize": [
+        320,
+        200
+      ],
+      "passes": {},
+      "metrics": {
+        "active": false,
+        "passes": {},
+        "timingActivity": {
+          "gpuSceneAuxMs": 0,
+          "gpuDepthPyramidMs": 0,
+          "gpuMaskRouterMs": 0,
+          "gpuVolumeDensityMs": 0,
+          "gpuVolumeLightMs": 0,
+          "gpuVolumeRaymarchMs": 0,
+          "gpuVolumeCompositeMs": 0,
+          "gpuCloudDensityMs": 0,
+          "gpuCloudRaymarchMs": 0,
+          "gpuCloudCompositeMs": 0,
+          "gpuTemporalMs": 0,
+          "gpuDepthFXMs": 0,
+          "gpuDistortionMs": 0,
+          "gpuFeedbackMs": 0,
+          "gpuPositiveBloomMs": 0,
+          "gpuDarkBloomMs": 0,
+          "gpuColourMs": 0,
+          "gpuAAResolveMs": 0,
+          "gpuDebugMs": 0
+        },
+        "errors": {},
+        "volume": {
+          "format": "rgba8unorm",
+          "cache": null,
+          "framebuffer": [
+            0,
+            0
+          ],
+          "generations": 0,
+          "lightingUpdates": 0,
+          "interpolation": 1,
+          "cacheBytes": 0
+        },
+        "proceduralCloud": {
+          "cache": null,
+          "framebuffer": [
+            0,
+            0
+          ],
+          "generations": 0,
+          "interpolation": 1,
+          "cacheBytes": 0,
+          "worldCenter": [
+            0,
+            90,
+            0
+          ],
+          "worldSize": [
+            360,
+            160,
+            360
+          ]
+        },
+        "historyResets": 3,
+        "lastHistoryReset": "camera / mode / sampling discontinuity",
+        "historyTracks": {},
+        "maskLatency": "Current depth/normal; previous-frame volume/history in scene materials. Current volume/history in compositor.",
+        "depthPyramidLevels": 0
+      }
+    }
+  ],
+  "errors": [],
+  "adapter": {
+    "vendor": "",
+    "architecture": "",
+    "device": "null-backend",
+    "description": ""
+  },
+  "kineticInitializationErrors": {},
+  "final": {
+    "ready": true,
+    "deviceLost": false,
+    "backend": "WebGPU",
+    "release": "4.4b",
+    "frames": 2,
+    "quality": {
+      "width": 320,
+      "height": 200,
+      "outputWidth": 320,
+      "outputHeight": 200,
+      "msaa": 1,
+      "requestedSSAA": 1,
+      "effectivePixelFactor": 1,
+      "effectiveSSAA": 1,
+      "limited": false,
+      "outputLimited": false,
+      "estimatedBytes": 35090432,
+      "budgetBytes": 805306368,
+      "transitionReserveBytes": 257698037,
+      "signature": "320:200:320:200:1",
+      "msaaAvailable": true,
+      "textureFilter": "trilinear"
+    },
+    "outputSize": [
+      320,
+      200
+    ],
+    "kinetic": {
+      "active": false,
+      "passes": {},
+      "timingActivity": {
+        "gpuSceneAuxMs": 0,
+        "gpuDepthPyramidMs": 0,
+        "gpuMaskRouterMs": 0,
+        "gpuVolumeDensityMs": 0,
+        "gpuVolumeLightMs": 0,
+        "gpuVolumeRaymarchMs": 0,
+        "gpuVolumeCompositeMs": 0,
+        "gpuCloudDensityMs": 0,
+        "gpuCloudRaymarchMs": 0,
+        "gpuCloudCompositeMs": 0,
+        "gpuTemporalMs": 0,
+        "gpuDepthFXMs": 0,
+        "gpuDistortionMs": 0,
+        "gpuFeedbackMs": 0,
+        "gpuPositiveBloomMs": 0,
+        "gpuDarkBloomMs": 0,
+        "gpuColourMs": 0,
+        "gpuAAResolveMs": 0,
+        "gpuDebugMs": 0
+      },
+      "errors": {},
+      "volume": {
+        "format": "rgba8unorm",
+        "cache": null,
+        "framebuffer": [
+          0,
+          0
+        ],
+        "generations": 0,
+        "lightingUpdates": 0,
+        "interpolation": 1,
+        "cacheBytes": 0
+      },
+      "proceduralCloud": {
+        "cache": null,
+        "framebuffer": [
+          0,
+          0
+        ],
+        "generations": 0,
+        "interpolation": 1,
+        "cacheBytes": 0,
+        "worldCenter": [
+          0,
+          90,
+          0
+        ],
+        "worldSize": [
+          360,
+          160,
+          360
+        ]
+      },
+      "historyResets": 3,
+      "lastHistoryReset": "camera / mode / sampling discontinuity",
+      "historyTracks": {},
+      "maskLatency": "Current depth/normal; previous-frame volume/history in scene materials. Current volume/history in compositor.",
+      "depthPyramidLevels": 0
+    },
+    "renderSize": [
+      320,
+      200
+    ],
+    "plasmaEnvironmentSize": [
+      64,
+      32
+    ],
+    "hdriEnvironmentSize": [
+      2,
+      1
+    ],
+    "environmentMips": 7,
+    "meshVertices": 4096,
+    "meshTriangles": 7938,
+    "meshAsset": "PROJECTION KNOT",
+    "meshStats": {
+      "asset": "showcase",
+      "vertices": 4320,
+      "triangles": 8640,
+      "sourceTriangles": 8640,
+      "spikes": 0,
+      "processingMs": 83.037463
+    },
+    "computePipelines": 4,
+    "gpuEnvironmentReconstruction": true,
+    "gpuSkySynth": true,
+    "modOutput": 0,
+    "previewBackend": "CPU fallback",
+    "underwaterObjects": 0,
+    "frameQueue": "browser-managed",
+    "meshProjectionReady": true,
+    "meshProjectionError": null,
+    "gpuErrors": [],
+    "adapter": {
+      "subgroupMatrixConfigs": []
+    },
+    "timings": {
+      "environmentUploadMs": 0,
+      "fillUniformsMs": 0.11504999999999654,
+      "encodeSubmitMs": 0.532367000000022,
+      "renderCpuMs": 0.532367000000022,
+      "gpuEnvironmentEncodeMs": 0.8009140000000343,
+      "gpuSynthEncodeMs": 0.6204379999999219
+    },
+    "gpuTimingsSupported": true,
+    "gpuTimingsMs": {
+      "gpuSceneMs": 0,
+      "gpuPostMs": 0,
+      "gpuSynthMs": 140721736.217403,
+      "gpuNLFilterMs": 3377673946.988544,
+      "gpuUpsampleBMs": 4222107470.65952,
+      "gpuMipMs": 62768653517.127686
+    },
+    "gpuTimingsLastMs": {
+      "gpuSceneMs": 0,
+      "gpuPostMs": 0,
+      "gpuSynthMs": 140721736.217403,
+      "gpuNLFilterMs": 3377673946.988544,
+      "gpuUpsampleBMs": 4222107470.65952,
+      "gpuMipMs": 62768653517.127686
+    }
+  },
+  "finished": "2026-09-07T00:27:06.892Z"
+}

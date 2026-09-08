@@ -1,0 +1,59 @@
+{
+  "base": "http://127.0.0.1:8766",
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 11138,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/src/main.js",
+      "status": 200,
+      "bytes": 11108,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "/src/ui/ui.js",
+      "status": 200,
+      "bytes": 26919,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "/src/core/parameters.js",
+      "status": 200,
+      "bytes": 11349,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "/src/core/store.js",
+      "status": 200,
+      "bytes": 6461,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "/src/environment/bridge.js",
+      "status": 200,
+      "bytes": 4712,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "/src/render/renderer.js",
+      "status": 200,
+      "bytes": 16144,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "/src/render/shaders.js",
+      "status": 200,
+      "bytes": 11792,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "/Xenofield-standalone.html",
+      "status": 200,
+      "bytes": 173719,
+      "contentType": "text/html; charset=utf-8"
+    }
+  ]
+}
