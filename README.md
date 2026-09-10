@@ -1,8 +1,8 @@
-# XENOFIELD V4.4b · Procedural Cloud World Volume
+# XENOFIELD V4.4b
 
 Native WebGPU visual synthesis: spectral surfaces, alien planets, imported meshes, cached volumes and controlled feedback.
 
-V4.4b extends the V4.4a Kinetic Compositor with a dedicated, directly rendered procedural-cloud world volume. It preserves the existing FFT, XenoVolume, SceneAux, SkySynth/HDRI, mixer, Noixtur, projections, mesh conditioning, spatial LUT editor, parameter limits and preset system. It does not restore the ABYSSAL underwater/world simulation.
+V4.4b extends the V4.4a Kinetic Compositor with a dedicated, directly rendered procedural-cloud world volume. It preserves the existing FFT, XenoVolume, SceneAux, SkySynth/HDRI, mixer, Noixtur, projections, mesh conditioning, spatial LUT editor, parameter limits and preset system. 
 
 ## Run
 
